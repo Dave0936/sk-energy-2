@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>SK Energy — Warranty registration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#0E1110;font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0E1110;text-decoration:none}
+a:hover{color:#4d5c12}
+:focus-visible{outline:2px solid #cbf24c;outline-offset:3px;border-radius:8px}
+input,select,textarea,button{font-family:inherit}
+::selection{background:#cbf24c;color:#0E1110}
+</style>
+</helmet>
+<dc-import name="SiteHeader" active="none" hint-size="100%,1px"></dc-import>
+<main id="main">
+  <dc-import name="PageHero" title="Register your warranty." intro="Register your SK Energy installation so your warranty is recorded against your property and we can support you quickly if you ever need us." eyebrow="#Aftercare" crumb="Warranty registration" img="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260914_083236_5c0ee258-a750-4c58-8142-4a54b086ebd2.png" alt="SK Energy engineer showing a homeowner her new system" active-chip="none" size="short" hint-size="100%,620px"></dc-import>
+
+  <section data-screen-label="Enquiry" style="padding:clamp(64px,8vw,110px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,72px);align-items:flex-start">
+    <div data-reveal="" style="flex:1.4 1 540px;display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <h2 style="margin:0;font-size:clamp(32px,3.4vw,48px);font-weight:600;line-height:1.15;letter-spacing:-0.02em">Installation details</h2>
+        <p style="margin:0;font-size:clamp(16px,1.2vw,17px);line-height:1.55;color:#6C7566">You'll find your installation date and job reference on your handover pack or invoice.</p>
+      </div>
+      <form novalidate="" onSubmit="{{ submit }}" aria-describedby="form-status" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px">
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="c-name" style="font-size:14px;font-weight:600">Name</label>
+          <input id="c-name" name="name" autocomplete="name" aria-invalid="{{ inv.name }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          <sc-if value="{{ errors.name }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.name }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="c-email" style="font-size:14px;font-weight:600">Email address</label>
+          <input id="c-email" name="email" type="email" autocomplete="email" aria-invalid="{{ inv.email }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          <sc-if value="{{ errors.email }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.email }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="c-phone" style="font-size:14px;font-weight:600">Phone <span style="color:#6C7566;font-weight:400">(optional)</span></label>
+          <input id="c-phone" name="phone" type="tel" autocomplete="tel" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="c-postcode" style="font-size:14px;font-weight:600">Postcode</label>
+          <input id="c-postcode" name="postcode" autocomplete="postal-code" aria-invalid="{{ inv.postcode }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px;text-transform:uppercase" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          <sc-if value="{{ errors.postcode }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.postcode }}</span></sc-if>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px">
+          <label for="w-address" style="font-size:14px;font-weight:600">Installation address</label>
+          <input id="w-address" name="address" autocomplete="street-address" aria-invalid="{{ inv.address }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          <sc-if value="{{ errors.address }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.address }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="w-date" style="font-size:14px;font-weight:600">Installation date</label>
+          <input id="w-date" name="installDate" type="date" aria-invalid="{{ inv.installDate }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          <sc-if value="{{ errors.installDate }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.installDate }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="w-ref" style="font-size:14px;font-weight:600">Job reference or invoice number</label>
+          <input id="w-ref" name="jobRef" aria-invalid="{{ inv.jobRef }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          <sc-if value="{{ errors.jobRef }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.jobRef }}</span></sc-if>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px">
+          <label for="w-system" style="font-size:14px;font-weight:600">System installed</label>
+          <select id="w-system" name="system" aria-invalid="{{ inv.system }}" style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+            <option value="">Choose a system</option>
+            <option>Solar PV</option>
+            <option>Battery Storage</option>
+            <option>Heat Pumps</option>
+            <option>EV Chargers</option>
+            <option>Underfloor Heating</option>
+            <option>More than one</option>
+          </select>
+          <sc-if value="{{ errors.system }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.system }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="w-serial" style="font-size:14px;font-weight:600">Equipment serial number(s) <span style="color:#6C7566;font-weight:400">(optional)</span></label>
+          <input id="w-serial" name="serial"  style="height:56px;border-radius:999px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:0 22px;font-size:16px" style-focus="border-color:#0E1110;background:#fff;outline:none">
+          
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px">
+          <label for="c-details" style="font-size:14px;font-weight:600">Anything else we should know <span style="color:#6C7566;font-weight:400">(optional)</span></label>
+          <textarea id="c-details" name="details" rows="5" style="border-radius:24px;border:1px solid #E8E8E5;background:#F1F1EF;color:#0E1110;padding:16px 22px;font-size:16px;resize:vertical" style-focus="border-color:#0E1110;background:#fff;outline:none"></textarea>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:6px">
+          <label style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4A5248;cursor:pointer"><input type="checkbox" name="consent" value="yes" aria-invalid="{{ inv.consent }}" style="accent-color:#0E1110;width:18px;height:18px;margin:2px 0 0;flex-shrink:0">I agree to SK Energy using these details to register and administer my warranty, as set out in the <a href="https://sk-energy.co.uk/privacy-policy/" style="text-decoration:underline">privacy policy</a>.</label>
+          <sc-if value="{{ errors.consent }}"><span role="alert" style="font-size:13px;color:#B3261E">{{ errors.consent }}</span></sc-if>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+          <button type="submit" disabled="{{ loading }}" data-magnetic="" style="height:58px;padding:0 10px 0 28px;border-radius:999px;border:0;background:#cbf24c;color:#0E1110;font-size:17px;font-weight:600;display:flex;align-items:center;gap:16px;cursor:pointer" style-hover="background:#d8f86f">{{ submitLabel }} <span aria-hidden="true" style="width:40px;height:40px;border-radius:50%;background:#0E1110;color:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></button>
+          <div id="form-status" role="status" aria-live="polite" style="font-size:14px;line-height:1.5;max-width:440px">
+            <sc-if value="{{ st.success }}"><span style="color:#3a4214;font-weight:600">Thank you, your warranty registration has been received. We'll email a confirmation.</span></sc-if>
+            <sc-if value="{{ st.error }}"><span style="color:#B3261E">Sorry, your registration wasn't sent. Please try again or email customerservice@sk-energy.co.uk.</span></sc-if>
+            <sc-if value="{{ st.unconfigured }}"><span style="color:#7a5a00">Online submissions aren't connected yet, so nothing has been sent. Please email customerservice@sk-energy.co.uk for now.</span></sc-if>
+          </div>
+        </div>
+      </form>
+    </div>
+    <aside data-reveal="" style="flex:1 1 340px;display:flex;flex-direction:column;gap:16px;position:sticky;top:110px">
+      <div style="padding:clamp(20px,2.4vw,28px);border-radius:32px;background:#0E1110;color:#fff;display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#cbf24c">Need help now?</span>
+        <a href="tel:+441383257022" style="color:#fff;font-size:28px;font-weight:600;letter-spacing:-0.01em" style-hover="color:#cbf24c">01383 257022</a>
+        <a href="mailto:customerservice@sk-energy.co.uk" style="color:rgba(255,255,255,0.85);font-size:16px;word-break:break-word" style-hover="color:#cbf24c">customerservice@sk-energy.co.uk</a>
+      </div>
+      <div style="padding:clamp(20px,2.4vw,28px);border-radius:32px;background:#cbf24c;display:flex;flex-direction:column;gap:14px">
+        <b style="font-size:18px;font-weight:600">Why register?</b>
+        <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px">
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="width:8px;height:8px;border-radius:50%;background:#0E1110;margin-top:7px;flex-shrink:0"></span>Your warranty is recorded against your property</li>
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="width:8px;height:8px;border-radius:50%;background:#0E1110;margin-top:7px;flex-shrink:0"></span>Faster support if something isn't working</li>
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="width:8px;height:8px;border-radius:50%;background:#0E1110;margin-top:7px;flex-shrink:0"></span>Service reminders from the team that installed it</li>
+        </ul>
+        <span style="font-size:13px;line-height:1.5;color:#3a4214">Warranty terms vary by manufacturer and product. Full terms are in your handover pack.</span>
+      </div>
+    </aside>
+  </section>
+</main>
+<dc-import name="SiteFooter" cta="false" hint-size="100%,500px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;submitEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Enquiry form&quot;}}">
+class Component extends DCLogic {
+  state = { errors: {}, status: 'idle' };
+  componentDidMount() { import(new URL('site-motion.js', location.href).href).then(m => m.init()); }
+  submit = async e => {
+    e.preventDefault();
+    const form = e.currentTarget, fd = new FormData(form);
+    const v = Object.fromEntries(fd);
+    if (v.company_website) return;
+    const err = {};
+    if (!(v.name || '').trim()) err.name = 'Please enter your name.';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test((v.email || '').trim())) err.email = 'Please enter a valid email address.';
+    if (!(v.address || '').trim()) err.address = 'Please enter the installation address.';
+    if (!/^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/.test((v.postcode || '').trim())) err.postcode = 'Please enter a valid UK postcode, e.g. KY11 8US.';
+    if (!v.installDate) err.installDate = 'Please enter the installation date.';
+    if (!(v.jobRef || '').trim()) err.jobRef = 'Please enter your job reference or invoice number.';
+    if (!v.system) err.system = 'Please choose the system installed.';
+    if (!v.consent) err.consent = 'Please confirm we can use your details to register your warranty.';
+    this.setState({ errors: err, status: 'idle' });
+    const first = Object.keys(err)[0];
+    if (first) { const el = form.querySelector(`[name="${first}"]`); el && el.focus(); return; }
+    const endpoint = (this.props.submitEndpoint || '').trim();
+    if (!endpoint) { this.setState({ status: 'unconfigured' }); return; }
+    this.setState({ status: 'loading' });
+    try {
+      delete v.company_website;
+      const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(v) });
+      if (!r.ok) throw new Error(r.status);
+      form.reset(); this.setState({ status: 'success' });
+    } catch (x) { this.setState({ status: 'error' }); }
+  };
+  renderVals() {
+    const s = this.state, e = s.errors;
+    return {
+      submit: this.submit, errors: e,
+      inv: { name: !!e.name, email: !!e.email, postcode: !!e.postcode, consent: !!e.consent, address: !!e.address, installDate: !!e.installDate, jobRef: !!e.jobRef, system: !!e.system },
+      loading: s.status === 'loading', submitLabel: s.status === 'loading' ? 'Sending…' : 'Register warranty',
+      st: { success: s.status === 'success', error: s.status === 'error', unconfigured: s.status === 'unconfigured' }
+    };
+  }
+}
+</script>
+</body>
+</html>

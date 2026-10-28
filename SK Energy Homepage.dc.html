@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>SK Energy — Architecturally Led Renewable Energy Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#0E1110;font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0E1110;text-decoration:none}
+a:hover{color:#4d5c12}
+:focus-visible{outline:2px solid #cbf24c;outline-offset:3px;border-radius:8px}
+input,select,textarea,button{font-family:inherit}
+::selection{background:#cbf24c;color:#0E1110}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" active="home" hint-size="100%,1px"></dc-import>
+
+<main id="main">
+
+<section id="top" data-hero="" data-screen-label="01 Hero" style="padding:0;margin:0">
+  <div style="position:relative;height:clamp(760px,100svh,960px);border-radius:0 0 clamp(28px,3vw,40px) 0;overflow:hidden;background:#0E1110;container-type:size">
+    <div data-hero-bg="" style="position:absolute;left:calc(50% - max(100cqw, 177.08cqh) / 2);top:calc(50% - max(100cqh, 56.47cqw) / 2);width:max(100cqw, 177.08cqh);height:max(100cqh, 56.47cqw);transform-origin:50% 40%">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260915_140214_d2216b09-63e3-47ea-9199-7c628a38ec43.png" alt="Stone-built Scottish home at dusk with a solar PV array on the roof, a heat pump beside the house and an electric car charging on the driveway" style="position:absolute;inset:0;width:100%;height:100%;display:block">
+      <div style="position:absolute;inset:0;background:linear-gradient(67deg, rgb(0,0,0) -18%, rgba(0,0,0,0.58) 30%, rgba(0,0,0,0.12) 52%, rgba(0,0,0,0) 64%)"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 22%)"></div>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <a href="Service.dc.html?slug=solar-pv" data-hotspot="" aria-label="Solar PV" style="position:absolute;left:62%;top:31%;width:0;height:0;color:#fff;z-index:2" style-hover="color:#fff">
+          <span data-pulse="" aria-hidden="true" style="position:absolute;left:-14px;top:-14px;width:28px;height:28px;border-radius:50%;background:rgba(203,242,76,0.35)"></span>
+          <span aria-hidden="true" style="position:absolute;left:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 3px rgba(14,17,16,0.45)"></span>
+          <span aria-hidden="true" style="position:absolute;left:8px;top:-1px;width:14px;height:2px;background:rgba(255,255,255,0.7)"></span>
+          <span style="position:absolute;left:20px;top:-21px;height:42px;padding:0 18px;border-radius:999px;background:rgba(14,17,16,0.42);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.22);font-size:15px;font-weight:500;white-space:nowrap;display:flex;align-items:center">Solar PV</span>
+        </a>
+        <a href="Service.dc.html?slug=ev-chargers" data-hotspot="" aria-label="EV Charger" style="position:absolute;left:47.4%;top:64.5%;width:0;height:0;color:#fff;z-index:2" style-hover="color:#fff">
+          <span data-pulse="" aria-hidden="true" style="position:absolute;left:-14px;top:-14px;width:28px;height:28px;border-radius:50%;background:rgba(203,242,76,0.35)"></span>
+          <span aria-hidden="true" style="position:absolute;left:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 3px rgba(14,17,16,0.45)"></span>
+          <span aria-hidden="true" style="position:absolute;left:8px;top:-1px;width:14px;height:2px;background:rgba(255,255,255,0.7)"></span>
+          <span style="position:absolute;left:20px;top:-21px;height:42px;padding:0 18px;border-radius:999px;background:rgba(14,17,16,0.42);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.22);font-size:15px;font-weight:500;white-space:nowrap;display:flex;align-items:center">EV Charger</span>
+        </a>
+        <a href="Service.dc.html?slug=battery-storage" data-hotspot="" aria-label="Battery Storage" style="position:absolute;left:84%;top:60%;width:0;height:0;color:#fff;z-index:2" style-hover="color:#fff">
+          <span data-pulse="" aria-hidden="true" style="position:absolute;left:-14px;top:-14px;width:28px;height:28px;border-radius:50%;background:rgba(203,242,76,0.35)"></span>
+          <span aria-hidden="true" style="position:absolute;left:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 3px rgba(14,17,16,0.45)"></span>
+          <span aria-hidden="true" style="position:absolute;right:8px;top:-1px;width:14px;height:2px;background:rgba(255,255,255,0.7)"></span>
+          <span style="position:absolute;right:20px;top:-21px;height:42px;padding:0 18px;border-radius:999px;background:rgba(14,17,16,0.42);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.22);font-size:15px;font-weight:500;white-space:nowrap;display:flex;align-items:center">Battery Storage</span>
+        </a>
+        <a href="Service.dc.html?slug=heat-pumps" data-hotspot="" aria-label="Heat Pump" style="position:absolute;left:78%;top:84%;width:0;height:0;color:#fff;z-index:2" style-hover="color:#fff">
+          <span data-pulse="" aria-hidden="true" style="position:absolute;left:-14px;top:-14px;width:28px;height:28px;border-radius:50%;background:rgba(203,242,76,0.35)"></span>
+          <span aria-hidden="true" style="position:absolute;left:-8px;top:-8px;width:16px;height:16px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 3px rgba(14,17,16,0.45)"></span>
+          <span aria-hidden="true" style="position:absolute;right:8px;top:-1px;width:14px;height:2px;background:rgba(255,255,255,0.7)"></span>
+          <span style="position:absolute;right:20px;top:-21px;height:42px;padding:0 18px;border-radius:999px;background:rgba(14,17,16,0.42);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.22);font-size:15px;font-weight:500;white-space:nowrap;display:flex;align-items:center">Heat Pump</span>
+        </a>
+      </sc-if>
+    </div>
+    <sc-if value="{{ heroVideo }}">
+      <video src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260915_140722_79850d85-c1a6-4bbb-b93d-40babbba02a5.mp4" autoplay="" muted="" loop="" playsinline="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+    </sc-if>
+
+    <div style="position:absolute;left:clamp(20px,4.6vw,66px);right:clamp(20px,4.6vw,66px);top:clamp(104px,17vh,200px);max-width:700px;display:flex;flex-direction:column;gap:22px">
+      <span data-hero-in="" style="align-self:flex-start;display:flex;align-items:center;gap:10px;padding:6px 16px 6px 8px;border-radius:999px;background:rgba(255,251,251,0.14);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.22);color:#fff;font-size:clamp(13px,1vw,14px);font-weight:500;letter-spacing:0.01em"><span aria-hidden="true" style="width:22px;height:22px;border-radius:50%;background:#cbf24c;flex-shrink:0"></span>Architecturally Led Renewable Energy Solutions</span>
+      <h1 data-hero-in="" style="margin:0;font-weight:600;font-size:clamp(38px,5.6vw,80px);line-height:1.08;letter-spacing:-0.025em;color:#fff;text-wrap:balance">Warmer homes. Lower bills.<br>A secure tomorrow. <span aria-hidden="true" style="display:inline-flex;vertical-align:middle;width:clamp(72px,7.4vw,107px);height:clamp(40px,3.9vw,56px);border-radius:28px;background:#cbf24c;align-items:center;justify-content:center;position:relative;top:-6px"><span style="width:26px;height:26px;border-radius:50%;border:2.4px solid #0E1110;border-top-color:transparent"></span><span style="position:absolute;width:2.4px;height:13px;background:#0E1110;border-radius:2px;top:calc(50% - 15px)"></span></span></h1>
+      <p data-hero-in="" style="margin:0;max-width:520px;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:rgba(255,255,255,0.86);text-wrap:pretty">Solar PV, battery storage, heat pumps, EV chargers and underfloor heating, designed around your property and installed by one experienced team across central Scotland.</p>
+      <div data-hero-in="" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+        <a href="#contact" data-magnetic="" style="height:56px;padding:0 10px 0 26px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:17px;font-weight:600;display:flex;align-items:center;gap:16px" style-hover="color:#0E1110;background:#d8f86f">Plan your energy system <span aria-hidden="true" style="width:38px;height:38px;border-radius:50%;background:#0E1110;color:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></a>
+        <a href="#our-work" style="height:56px;padding:0 26px;border-radius:999px;background:rgba(255,251,251,0.16);backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.28);color:#fff;font-size:17px;display:flex;align-items:center" style-hover="background:rgba(255,251,251,0.28);color:#fff">Explore our work</a>
+      </div>
+      <div data-hero-in="" style="display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;font-size:14px;color:rgba(255,255,255,0.8);padding-top:4px">
+        <img src="assets/mcs-white.png" alt="MCS certified" style="height:30px;width:auto;display:block">
+        <img src="assets/trustmark-white.png" alt="TrustMark Government Endorsed Quality" style="height:26px;width:auto;display:block">
+        <a href="https://uk.trustpilot.com/search?query=SK%20Energy" aria-label="Read our reviews on Trustpilot" style="display:block"><img src="assets/trustpilot-white.png" alt="Trustpilot" style="height:26px;width:auto;display:block"></a>
+        <span style="display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;background:#cbf24c"></span>Based in Dunfermline, Fife</span>
+      </div>
+    </div>
+
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+
+      <div data-hero-in="" style="position:absolute;right:clamp(20px,4.6vw,66px);top:clamp(110px,14vh,150px);width:302px;padding:21px;border-radius:28px;background:rgba(14,17,16,0.28);backdrop-filter:blur(40px);border:1px solid rgba(255,255,255,0.16);display:flex;flex-direction:column;gap:18px;color:#fff">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.4)">
+          <span style="font-size:17px;line-height:1.45;letter-spacing:-0.02em">Over 1,400 systems commissioned</span>
+          <a href="#our-work" aria-label="See our work" style="width:48px;height:48px;border-radius:50%;background:#cbf24c;color:#0E1110;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px" style-hover="color:#0E1110;transform:rotate(-45deg)">→</a>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <span style="font-size:14px;color:rgba(255,255,255,0.75)">Fife &amp; York offices</span>
+          <span style="font-size:15px;font-weight:500">12+ years</span>
+        </div>
+      </div>
+    </sc-if>
+
+    <span aria-hidden="true" style="position:absolute;left:min(860px,94%);bottom:-1px;width:clamp(28px,3vw,40px);height:clamp(28px,3vw,40px);background:radial-gradient(circle at 100% 0, transparent 70%, #fff calc(70% + 1px));pointer-events:none"></span>
+    <div style="position:absolute;left:0;bottom:-1px;width:min(860px,94%);height:67px;background:#fff;border-top-right-radius:clamp(28px,3vw,40px);display:flex;align-items:center;gap:10px;padding:14px 28px 0 clamp(20px,4.6vw,66px);overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap;scrollbar-width:none">
+      <a href="Service.dc.html?slug=solar-pv" style="padding:6px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500;white-space:nowrap">Solar PV</a>
+      <a href="Service.dc.html?slug=battery-storage" style="padding:5px 13px;border-radius:999px;border:1px solid #D3D5D0;color:#0E1110;font-size:14px;white-space:nowrap" style-hover="border-color:#0E1110">Battery Storage</a>
+      <a href="Service.dc.html?slug=heat-pumps" style="padding:5px 13px;border-radius:999px;border:1px solid #D3D5D0;color:#0E1110;font-size:14px;white-space:nowrap" style-hover="border-color:#0E1110">Heat Pumps</a>
+      <a href="Service.dc.html?slug=ev-chargers" style="padding:5px 13px;border-radius:999px;border:1px solid #D3D5D0;color:#0E1110;font-size:14px;white-space:nowrap" style-hover="border-color:#0E1110">EV Chargers</a>
+      <a href="Service.dc.html?slug=underfloor-heating" style="padding:5px 13px;border-radius:999px;border:1px solid #D3D5D0;color:#0E1110;font-size:14px;white-space:nowrap" style-hover="border-color:#0E1110">Underfloor Heating</a>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="02 Introduction" style="padding:clamp(72px,9vw,128px) clamp(20px,4.6vw,66px) clamp(48px,6vw,80px);max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(36px,4vw,56px);align-items:center">
+  <div data-reveal="" style="flex:1 1 420px;max-width:600px;display:flex;flex-direction:column;gap:26px">
+    <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#OurApproach</span>
+    <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance">Good energy starts with a better plan.</h2>
+    <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:#6C7566;text-wrap:pretty">Every property is different. We assess how you use energy, what your building needs, and what you want to achieve before recommending a system.</p>
+    <ul data-stagger="" style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px">
+      <li style="display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:20px;background:#F1F1EF"><span style="width:22px;height:22px;border-radius:50%;background:#cbf24c;flex-shrink:0;margin-top:1px"></span><span style="font-size:16px;line-height:1.45">One team from survey through to installation</span></li>
+      <li style="display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:20px;background:#F1F1EF"><span style="width:22px;height:22px;border-radius:50%;background:#cbf24c;flex-shrink:0;margin-top:1px"></span><span style="font-size:16px;line-height:1.45">Systems designed around actual requirements</span></li>
+      <li style="display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:20px;background:#F1F1EF"><span style="width:22px;height:22px;border-radius:50%;background:#cbf24c;flex-shrink:0;margin-top:1px"></span><span style="font-size:16px;line-height:1.45">Clear specifications and clear costs</span></li>
+      <li style="display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:20px;background:#F1F1EF"><span style="width:22px;height:22px;border-radius:50%;background:#cbf24c;flex-shrink:0;margin-top:1px"></span><span style="font-size:16px;line-height:1.45">Long-term maintenance and aftercare</span></li>
+    </ul>
+    <a href="About.dc.html" data-magnetic="" style="align-self:flex-start;height:48px;padding:0 26px;border-radius:26px;background:#0E1110;color:#fff;font-size:16px;display:flex;align-items:center" style-hover="color:#fff;background:#262B27">Learn more about us</a>
+  </div>
+  <div data-reveal="" style="flex:1 1 480px;position:relative;min-height:clamp(380px,32vw,460px);border-radius:42px;overflow:hidden;background:rgb(66,65,64)">
+    <img data-parallax="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202342_60623d96-9e68-4ec5-857f-b541e0f26c1d.png" alt="SK Energy adviser sketching a system design with a homeowner at her kitchen table" style="position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover">
+    <div style="position:absolute;inset:0;background:linear-gradient(218deg, rgb(0,0,0) -44%, rgba(0,0,0,0.61) 27%, rgba(0,0,0,0) 80%)"></div>
+    <div style="position:absolute;right:clamp(20px,3vw,40px);top:50%;transform:translateY(-50%);max-width:280px;display:flex;flex-direction:column;gap:12px;color:#fff">
+      <img src="assets/sk-logo-light.svg" alt="SK Energy" style="height:38px;width:auto;align-self:flex-start">
+      <p style="margin:0;font-size:14px;line-height:1.5;color:rgba(255,255,255,0.85)">Advice first. Equipment second. See how a system takes shape.</p>
+      <button type="button" onClick="{{ openVideo }}" style="align-self:flex-start;display:flex;align-items:center;gap:10px;background:none;border:0;padding:6px 0;color:#fff;font-size:14px;font-weight:600;cursor:pointer"><span style="width:34px;height:34px;border-radius:50%;background:#cbf24c;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-left:10px solid #0E1110;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:3px"></span></span>Play film</button>
+    </div>
+  </div>
+</section>
+
+<section id="services" data-screen-label="03 Services" style="padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(32px,4vw,52px)">
+  <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:680px">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#OurServices</span>
+      <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em">Five services. One joined-up system.</h2>
+      <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:#6C7566;max-width:560px">Choose a single technology or combine several. Because we design and install all of them, each part is planned to work with the rest.</p>
+    </div>
+    <a href="#contact" style="height:48px;padding:0 26px;border-radius:26px;border:1px solid #0E1110;color:#0E1110;font-size:16px;display:flex;align-items:center" style-hover="background:#0E1110;color:#fff">Not sure where to start?</a>
+  </div>
+
+  <div data-stagger="" style="display:flex;flex-wrap:wrap;gap:16px">
+    <a href="Service.dc.html?slug=solar-pv" data-hover-zoom="" style="flex:1 1 340px;min-height:clamp(440px,46vw,540px);border-radius:clamp(28px,3vw,40px);background:#0E1110;color:#fff;padding:clamp(24px,2.6vw,38px);display:flex;flex-direction:column;gap:14px;overflow:hidden" style-hover="color:#fff">
+        <span style="align-self:flex-start;padding:4px 12px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:13px;font-weight:500">01</span>
+        <h3 style="margin:6px 0 0;font-size:clamp(21px,2vw,24px);font-weight:700;letter-spacing:-0.01em">Solar PV</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:rgba(255,255,255,0.75)">Generate your own electricity from a roof-mounted array designed around your property and how you use power.</p>
+        <span style="display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:#cbf24c">Explore solar pv →</span>
+      <div style="margin-top:auto;height:250px;border-radius:24px;overflow:hidden"><img data-zoom="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202152_4e5f20f1-defe-49b2-8cbb-7a36c81056ae.png" alt="Whitewashed cottage with solar panels below the Scottish hills" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </a>
+    <a href="Service.dc.html?slug=battery-storage" data-hover-zoom="" style="flex:1 1 340px;min-height:clamp(440px,46vw,540px);border-radius:clamp(28px,3vw,40px);background:#F1F1EF;color:#0E1110;padding:clamp(24px,2.6vw,38px);display:flex;flex-direction:column;gap:14px;overflow:hidden" style-hover="color:#0E1110">
+        <span style="align-self:flex-start;padding:3px 11px;border-radius:999px;border:1px solid #0E1110;font-size:13px;font-weight:500">02</span>
+        <h3 style="margin:6px 0 0;font-size:clamp(21px,2vw,24px);font-weight:700;letter-spacing:-0.01em">Battery Storage</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#6C7566">Store surplus energy so you can use more of what you generate, when you actually need it.</p>
+        <span style="display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;">Explore battery storage →</span>
+      <div style="margin-top:auto;height:250px;border-radius:24px;overflow:hidden"><img data-zoom="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202220_ab4625c1-25be-4cff-9420-129f2aa4f016.png" alt="Home battery storage units mounted on a utility room wall" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </a>
+    <a href="Service.dc.html?slug=heat-pumps" data-hover-zoom="" style="flex:1 1 340px;min-height:clamp(440px,46vw,540px);border-radius:clamp(28px,3vw,40px);background:#F1F1EF;color:#0E1110;padding:clamp(24px,2.6vw,38px);display:flex;flex-direction:column;gap:14px;overflow:hidden" style-hover="color:#0E1110">
+        <span style="align-self:flex-start;padding:3px 11px;border-radius:999px;border:1px solid #0E1110;font-size:13px;font-weight:500">03</span>
+        <h3 style="margin:6px 0 0;font-size:clamp(21px,2vw,24px);font-weight:700;letter-spacing:-0.01em">Heat Pumps</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#6C7566">A properly designed air source heat pump system, sized to the property for comfortable low-carbon heating.</p>
+        <span style="display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;">Explore heat pumps →</span>
+      <div style="margin-top:auto;height:250px;border-radius:24px;overflow:hidden"><img data-zoom="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202230_7837ea15-a003-487a-8955-94f3e67cfbb4.png" alt="Stone cottage with an air source heat pump beside the gable wall" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </a>
+  </div>
+  <div data-stagger="" style="display:flex;flex-wrap:wrap;gap:16px">
+    <a href="Service.dc.html?slug=ev-chargers" data-hover-zoom="" style="flex:1 1 520px;min-height:320px;border-radius:40px;background:#F1F1EF;color:#0E1110;padding:clamp(24px,2.6vw,38px);display:flex;flex-wrap:wrap;gap:24px;overflow:hidden" style-hover="color:#0E1110">
+      <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:14px">
+        <span style="align-self:flex-start;padding:3px 11px;border-radius:999px;border:1px solid #0E1110;font-size:13px;font-weight:500">04</span>
+        <h3 style="margin:6px 0 0;font-size:clamp(21px,2vw,24px);font-weight:700;letter-spacing:-0.01em">EV Chargers</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#6C7566">Smart charge points for homes, workplaces and fleets, set up to suit how and when you drive.</p>
+        <span style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;">Explore ev chargers →</span>
+      </div>
+      <div style="flex:1 1 240px;min-height:240px;border-radius:24px;overflow:hidden"><img data-zoom="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202258_b6053f53-756d-41fd-b1a4-a4eb9bbf56d5.png" alt="Wall-mounted EV charger on a stone wall charging a car at dusk" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </a>
+    <a href="Service.dc.html?slug=underfloor-heating" data-hover-zoom="" style="flex:1 1 520px;min-height:320px;border-radius:40px;background:#cbf24c;color:#0E1110;padding:clamp(24px,2.6vw,38px);display:flex;flex-wrap:wrap;gap:24px;overflow:hidden" style-hover="color:#0E1110">
+      <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:14px">
+        <span style="align-self:flex-start;padding:4px 12px;border-radius:999px;background:#0E1110;color:#cbf24c;font-size:13px;font-weight:500">05</span>
+        <h3 style="margin:6px 0 0;font-size:clamp(21px,2vw,24px);font-weight:700;letter-spacing:-0.01em">Underfloor Heating</h3>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#2d3410">Even, efficient warmth across every room, and an ideal partner for a heat pump.</p>
+        <span style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;">Explore underfloor heating →</span>
+      </div>
+      <div style="flex:1 1 240px;min-height:240px;border-radius:24px;overflow:hidden"><img data-zoom="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202259_b3b21890-5a86-4953-8f58-e5ab628f2753.png" alt="Bare feet on a warm wooden floor heated by underfloor heating" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+    </a>
+  </div>
+</section>
+
+<section id="how-it-works" data-process="" data-screen-label="04 How it works" style="background:#F1F1EF;box-shadow:0 0 0 100vmax #F1F1EF;clip-path:inset(0 -100vmax);max-width:1440px;margin:0 auto">
+  <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+    <div style="height:340vh;position:relative">
+      <div style="position:sticky;top:0;height:100vh;min-height:680px;display:flex;align-items:center;padding:96px clamp(20px,4.6vw,66px) 48px">
+        <div style="width:100%;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,5vw,80px);align-items:center">
+          <div style="display:flex;flex-direction:column;gap:28px">
+            <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#HowItWorks</span>
+            <h2 style="margin:0;font-size:clamp(38px,4.2vw,60px);font-weight:600;line-height:1.12;letter-spacing:-0.02em">Four clear steps, no hard sell.</h2>
+            <ol style="list-style:none;margin:0;padding:0;position:relative;display:flex;flex-direction:column;gap:6px">
+              <div aria-hidden="true" style="position:absolute;left:23px;top:24px;bottom:24px;width:2px;background:#E8E8E5;border-radius:2px"><div data-line="" style="width:100%;height:100%;background:#0E1110;transform-origin:50% 0;transform:scaleY(0)"></div></div>
+              <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+                <li style="position:relative">
+                  <button type="button" onClick="{{ st.go }}" aria-current="{{ st.current }}" style="width:100%;display:flex;gap:20px;align-items:flex-start;padding:10px 0;background:none;border:0;text-align:left;cursor:pointer;font-family:inherit;color:#0E1110">
+                    <span style="{{ st.dotStyle }}">{{ st.num }}</span>
+                    <span style="{{ st.textStyle }}">
+                      <b style="font-size:20px;font-weight:700;line-height:1.3">{{ st.title }}</b>
+                      <span style="{{ st.descStyle }}">{{ st.desc }}</span>
+                    </span>
+                  </button>
+                </li>
+              </sc-for>
+            </ol>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:#6C7566;max-width:440px;padding-left:68px">Recommendations are based on suitability and evidence. If a technology isn't right for your property, we'll tell you.</p>
+          </div>
+          <div style="position:relative;height:min(74vh,660px);border-radius:clamp(28px,3vw,40px);overflow:hidden;background:#0E1110">
+            <sc-for list="{{ steps }}" as="st" hint-placeholder-count="0">
+              <img src="{{ st.img }}" alt="{{ st.alt }}" style="{{ st.imgStyle }}">
+            </sc-for>
+            <div style="position:absolute;inset:0;background:linear-gradient(200deg, rgba(14,17,16,0) 35%, rgba(14,17,16,0.8) 100%)"></div>
+            <div style="position:absolute;top:24px;left:24px;right:24px;display:flex;gap:8px">
+              <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4">
+                <span style="flex:1;height:4px;border-radius:4px;background:rgba(255,255,255,0.25);overflow:hidden"><span style="{{ st.barStyle }}"></span></span>
+              </sc-for>
+            </div>
+            <span aria-hidden="true" style="position:absolute;right:clamp(20px,2.5vw,36px);top:40px;font-size:clamp(120px,14vw,200px);font-weight:700;line-height:1;letter-spacing:-0.06em;color:#cbf24c;font-variant-numeric:tabular-nums">{{ stepNum }}</span>
+            <div style="position:absolute;left:24px;bottom:24px;max-width:440px;padding:24px 26px;border-radius:28px;background:rgba(14,17,16,0.45);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.14);color:#fff;display:flex;flex-direction:column;gap:8px">
+              <span style="font-size:13px;font-weight:600;color:#cbf24c;letter-spacing:0.06em;text-transform:uppercase">Step {{ stepNum }} of 04</span>
+              <span style="font-size:24px;font-weight:600;letter-spacing:-0.01em">{{ stepTitle }}</span>
+              <span style="font-size:15px;line-height:1.5;color:rgba(255,255,255,0.82)">{{ stepPromise }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ narrow }}">
+    <div style="padding:64px 20px;display:flex;flex-direction:column;gap:28px">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#HowItWorks</span>
+      <h2 style="margin:0;font-size:38px;font-weight:600;line-height:1.15;letter-spacing:-0.02em">Four clear steps, no hard sell.</h2>
+      <p style="margin:0;font-size:clamp(16px,1.2vw,17px);line-height:1.55;color:#6C7566">Recommendations are based on suitability and evidence. If a technology isn't right for your property, we'll tell you.</p>
+      <ol data-stagger="" style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px">
+        <sc-for list="{{ steps }}" as="st" hint-placeholder-count="0">
+          <li style="border-radius:28px;background:#fff;overflow:hidden">
+            <img src="{{ st.img }}" alt="{{ st.alt }}" style="width:100%;height:200px;object-fit:cover;display:block">
+            <div style="padding:22px;display:flex;flex-direction:column;gap:8px">
+              <span style="align-self:flex-start;padding:4px 12px;border-radius:999px;background:#0E1110;color:#cbf24c;font-size:13px;font-weight:600">{{ st.num }}</span>
+              <b style="font-size:20px;font-weight:700">{{ st.title }}</b>
+              <span style="font-size:16px;line-height:1.5;color:#6C7566">{{ st.desc }}</span>
+            </div>
+          </li>
+        </sc-for>
+      </ol>
+    </div>
+  </sc-if>
+</section>
+
+<section id="our-work" data-screen-label="05 Our work" style="padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+  <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:24px 60px;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:640px">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#OurWork</span>
+      <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance">1,400+ systems, homes to building sites.</h2>
+      <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:#6C7566;max-width:560px">Residential retrofits, commercial rooftops and new-build developments. Each case study sets out the brief, what we installed and, where measured, how it performs.</p>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span aria-live="polite" style="font-size:15px;font-weight:600;min-width:64px;font-variant-numeric:tabular-nums">{{ projCounter }}</span>
+      <button type="button" onClick="{{ prevProj }}" aria-label="Previous project" style="width:52px;height:52px;border-radius:50%;border:1px solid #D3D5D0;background:#fff;color:#0E1110;font-size:18px;cursor:pointer" style-hover="border-color:#0E1110">←</button>
+      <button type="button" onClick="{{ nextProj }}" aria-label="Next project" style="width:52px;height:52px;border-radius:50%;border:0;background:#cbf24c;color:#0E1110;font-size:18px;cursor:pointer" style-hover="background:#d8f86f">→</button>
+      <a href="Work.dc.html" style="margin-left:6px;height:52px;padding:0 26px;border-radius:26px;background:#0E1110;color:#fff;font-size:16px;display:flex;align-items:center" style-hover="color:#fff;background:#262B27">View all projects</a>
+    </div>
+  </div>
+  <div data-reveal="" style="{{ galleryStyle }}">
+    <sc-for list="{{ projects }}" as="p" hint-placeholder-count="0">
+      <article style="{{ p.cardStyle }}" onClick="{{ p.select }}">
+        <img src="{{ p.img }}" alt="{{ p.alt }}" style="{{ p.imgStyle }}">
+        <div style="{{ p.shadeStyle }}"></div>
+        <sc-if value="{{ p.open }}">
+          <div style="position:absolute;left:clamp(16px,2vw,28px);right:clamp(16px,2vw,28px);bottom:clamp(16px,2vw,28px);display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between">
+            <div style="flex:1 1 300px;max-width:560px;padding:clamp(20px,2.2vw,28px);border-radius:28px;background:rgba(14,17,16,0.5);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,0.14);color:#fff;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;gap:8px;flex-wrap:wrap"><span style="padding:4px 12px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:13px;font-weight:500">{{ p.type }}</span><span style="padding:3px 11px;border-radius:999px;border:1px solid rgba(255,255,255,0.4);font-size:13px">{{ p.location }}</span></div>
+              <h3 style="margin:0;font-size:clamp(24px,2.2vw,32px);font-weight:600;letter-spacing:-0.02em;line-height:1.2">{{ p.title }}</h3>
+              <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px 24px;font-size:14px;line-height:1.5">
+                <div><dt style="color:#cbf24c;font-weight:600;margin-bottom:2px">The brief</dt><dd style="margin:0;color:rgba(255,255,255,0.86)">{{ p.challenge }}</dd></div>
+                <div><dt style="color:#cbf24c;font-weight:600;margin-bottom:2px">What we installed</dt><dd style="margin:0;color:rgba(255,255,255,0.86)">{{ p.solution }}</dd></div>
+              </dl>
+              <span style="font-size:13px;color:rgba(255,255,255,0.7);border-top:1px solid rgba(255,255,255,0.2);padding-top:12px">Results: measured figures published with the full case study</span>
+            </div>
+            <a href="{{ p.href }}" style="height:56px;padding:0 10px 0 24px;border-radius:999px;background:#fff;color:#0E1110;font-size:16px;font-weight:600;display:flex;align-items:center;gap:14px" style-hover="color:#0E1110;background:#cbf24c">Read case study <span aria-hidden="true" style="width:38px;height:38px;border-radius:50%;background:#0E1110;color:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></a>
+          </div>
+        </sc-if>
+        <sc-if value="{{ p.closed }}">
+          <button type="button" onClick="{{ p.select }}" aria-label="{{ p.openLabel }}" style="{{ p.tabStyle }}">
+            <span style="font-size:14px;font-weight:600;color:#cbf24c">{{ p.num }}</span>
+            <span style="{{ p.labelStyle }}">{{ p.short }}</span>
+          </button>
+        </sc-if>
+      </article>
+    </sc-for>
+  </div>
+  <p style="margin:0;font-size:13px;line-height:1.5;color:#6C7566">Photography shown is representative. Performance figures appear only where they have been measured.</p>
+</section>
+
+<section id="why" data-screen-label="06 Why SK Energy" style="padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(40px,5vw,72px)">
+  <div style="display:flex;flex-wrap:wrap;gap:clamp(36px,4vw,64px);align-items:center">
+    <div data-reveal="" style="flex:1 1 400px;max-width:600px;display:flex;flex-direction:column;gap:26px">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#WhySKEnergy</span>
+      <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance">Honest advice from people who install it.</h2>
+      <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:#6C7566">We started out in underfloor heating and grew into renewables. That background shapes how we work: design properly, explain clearly, and stay around afterwards.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding-top:8px">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:clamp(36px,3.4vw,48px);font-weight:600;letter-spacing:-0.02em;line-height:1"><span data-count="12">12</span>+</span><span style="font-size:15px;line-height:1.4;color:#6C7566">Years of experience</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:clamp(36px,3.4vw,48px);font-weight:600;letter-spacing:-0.02em;line-height:1"><span data-count="1400">1,400</span>+</span><span style="font-size:15px;line-height:1.4;color:#6C7566">Systems commissioned</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:clamp(36px,3.4vw,48px);font-weight:600;letter-spacing:-0.02em;line-height:1"><span data-count="5">5</span></span><span style="font-size:15px;line-height:1.4;color:#6C7566">Integrated service categories</span></div>
+      </div>
+    </div>
+    <div data-reveal="" style="flex:1 1 440px;position:relative;min-height:clamp(420px,40vw,560px);padding:0 0 60px 0">
+      <div style="position:absolute;left:clamp(0px,1.5vw,16px);right:0;top:0;bottom:60px;border-radius:32px;overflow:hidden;background:#E8E8E5">
+        <img data-parallax="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202317_a33b2e41-3941-4d9c-aad4-8e5473562bd7.png" alt="SK Energy engineer talking a homeowner through her new heating system" style="position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover">
+      </div>
+      <div style="position:absolute;left:0;bottom:0;width:min(300px,70%);padding:clamp(20px,2.2vw,26px);border-radius:24px;background:#cbf24c;color:#0E1110;display:flex;flex-direction:column;gap:14px;box-shadow:0 24px 48px -24px rgba(14,17,16,0.4)">
+        <span style="font-size:17px;font-weight:600;line-height:1.3">Accredited installer</span>
+        <div style="display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center">
+          <img src="assets/mcs-ink.png" alt="MCS certified" style="height:30px;width:auto;display:block">
+          <img src="assets/trustmark-ink.png" alt="TrustMark Government Endorsed Quality" style="height:24px;width:auto;display:block">
+        </div>
+        <span style="font-size:12px;line-height:1.4;color:#3a4214">Scope of each accreditation available on request.</span>
+      </div>
+    </div>
+  </div>
+  <ul data-stagger="" style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));column-gap:clamp(32px,4vw,56px)">
+    <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid #D3D5D0" style-hover="border-top-color:#0E1110">
+      <span style="width:44px;height:44px;border-radius:50%;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">01</span>
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:20px;font-weight:700;line-height:1.3">Integrated expertise</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#6C7566;max-width:420px">Solar PV, battery storage, heat pumps, EV chargers and underfloor heating under one roof, so every part is designed to work together.</p></div>
+    </li>
+    <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid #D3D5D0" style-hover="border-top-color:#0E1110">
+      <span style="width:44px;height:44px;border-radius:50%;background:#F1F1EF;color:#0E1110;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">02</span>
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:20px;font-weight:700;line-height:1.3">Property-specific advice</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#6C7566;max-width:420px">Recommendations start with your building and your usage, not with a product we need to move.</p></div>
+    </li>
+    <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid #D3D5D0" style-hover="border-top-color:#0E1110">
+      <span style="width:44px;height:44px;border-radius:50%;background:#F1F1EF;color:#0E1110;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">03</span>
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:20px;font-weight:700;line-height:1.3">Transparent design and costs</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#6C7566;max-width:420px">Clear specifications and itemised pricing, so you can compare and decide with confidence.</p></div>
+    </li>
+    <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid #D3D5D0" style-hover="border-top-color:#0E1110">
+      <span style="width:44px;height:44px;border-radius:50%;background:#F1F1EF;color:#0E1110;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">04</span>
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:20px;font-weight:700;line-height:1.3">Professional installation</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#6C7566;max-width:420px">Our own engineers and technicians, working tidily and keeping you informed throughout.</p></div>
+    </li>
+    <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid #D3D5D0" style-hover="border-top-color:#0E1110">
+      <span style="width:44px;height:44px;border-radius:50%;background:#F1F1EF;color:#0E1110;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">05</span>
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:20px;font-weight:700;line-height:1.3">Local knowledge</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#6C7566;max-width:420px">Based in Dunfermline and working across central Scotland, with an understanding of local housing stock.</p></div>
+    </li>
+    <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:30px 0;border-top:1px solid #D3D5D0" style-hover="border-top-color:#0E1110">
+      <span style="width:44px;height:44px;border-radius:50%;background:#F1F1EF;color:#0E1110;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">06</span>
+      <div style="display:flex;flex-direction:column;gap:8px"><h3 style="margin:0;font-size:20px;font-weight:700;line-height:1.3">Support after installation</h3><p style="margin:0;font-size:16px;line-height:1.55;color:#6C7566;max-width:420px">Maintenance, aftercare and warranty registration, so your system keeps doing its job.</p></div>
+    </li>
+  </ul>
+</section>
+
+<section data-screen-label="07 Testimonials" style="background:#F1F1EF;box-shadow:0 0 0 100vmax #F1F1EF;clip-path:inset(0 -100vmax);padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+  <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:24px 60px;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:640px">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#CustomerStories</span>
+      <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em">In our customers' words.</h2>
+      <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:#6C7566;max-width:520px">Independent reviews from homeowners and businesses we've worked with.</p>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px"><button type="button" onClick="{{ tPrev }}" aria-label="Previous testimonial" style="width:52px;height:52px;border-radius:50%;border:1px solid #D3D5D0;background:#fff;color:#0E1110;font-size:18px;cursor:pointer" style-hover="border-color:#0E1110">←</button><button type="button" onClick="{{ tNext }}" aria-label="Next testimonial" style="width:52px;height:52px;border-radius:50%;border:0;background:#cbf24c;color:#0E1110;font-size:18px;cursor:pointer" style-hover="background:#d8f86f">→</button><a href="https://uk.trustpilot.com/search?query=SK%20Energy" style="margin-left:6px;height:52px;padding:0 26px;border-radius:26px;background:#0E1110;gap:10px;color:#fff;font-size:16px;display:flex;align-items:center" style-hover="color:#fff;background:#262B27" aria-label="Read reviews on Trustpilot">Read reviews on <img src="assets/trustpilot-white.png" alt="Trustpilot" style="height:20px;width:auto;display:block"></a></div>
+  </div>
+  <div ref="{{ tTrack }}" role="region" aria-roledescription="carousel" aria-label="Customer testimonials" tabindex="0" data-stagger="" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;margin:0 calc(-1 * clamp(20px,4.6vw,66px));padding:4px clamp(20px,4.6vw,66px);scroll-padding:0 clamp(20px,4.6vw,66px)">
+    <sc-for list="{{ tCards }}" as="t" hint-placeholder-count="5">
+      <figure aria-roledescription="slide" style="margin:0;flex:0 0 min(440px,82vw);scroll-snap-align:start;padding:clamp(28px,2.6vw,36px);border-radius:32px;background:#fff;display:flex;flex-direction:column;gap:24px;min-height:340px">
+        <span aria-hidden="true" style="width:52px;height:52px;border-radius:50%;background:#cbf24c;color:#0E1110;font-size:34px;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center;padding-top:12px">“</span>
+        <sc-if value="{{ t.real }}">
+          <blockquote style="margin:0;font-size:clamp(17px,1.4vw,19px);line-height:1.55;letter-spacing:-0.01em;flex:1">{{ t.quote }}</blockquote>
+        </sc-if>
+        <sc-if value="{{ t.empty }}" hint-placeholder-val="{{ true }}">
+          <div style="flex:1;display:flex;flex-direction:column;gap:10px">
+            <span style="height:12px;border-radius:6px;background:#F1F1EF;width:100%"></span>
+            <span style="height:12px;border-radius:6px;background:#F1F1EF;width:92%"></span>
+            <span style="height:12px;border-radius:6px;background:#F1F1EF;width:70%"></span>
+            <span style="margin-top:10px;font-size:14px;line-height:1.5;color:#6C7566">Verified testimonial to be added</span>
+          </div>
+        </sc-if>
+        <figcaption style="display:flex;flex-direction:column;gap:2px;border-top:1px solid #E8E8E5;padding-top:18px">
+          <b style="font-size:16px;font-weight:600">{{ t.name }}</b>
+          <span style="font-size:14px;color:#6C7566">{{ t.install }}</span>
+        </figcaption>
+      </figure>
+    </sc-for>
+  </div>
+</section>
+
+<section id="commercial" data-screen-label="08 Commercial and new-build" style="padding:clamp(24px,3vw,40px) clamp(12px,4.2vw,61px);max-width:1440px;margin:0 auto">
+  <div style="position:relative;border-radius:clamp(28px,3vw,40px);overflow:hidden;background:#0E1110;color:#fff;display:flex;flex-wrap:wrap;min-height:clamp(480px,50vw,560px)">
+    <div data-reveal="" style="flex:1 1 440px;padding:clamp(32px,5vw,72px);display:flex;flex-direction:column;gap:24px;justify-content:center;position:relative;z-index:1">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;border:1px solid #cbf24c;color:#cbf24c;font-size:14px;font-weight:500">For businesses &amp; developers</span>
+      <h2 style="margin:0;font-size:clamp(34px,3.8vw,54px);font-weight:600;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance">Building for the future? Get energy designed in from the start.</h2>
+      <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:rgba(255,255,255,0.75);max-width:520px">We coordinate solar, battery storage, heat pumps and EV charging with your commercial requirements and construction schedule, working alongside your architects, contractors and site teams.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;max-width:560px">
+        <span style="padding:14px 16px;border-radius:16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);font-size:15px">Commercial premises</span>
+        <span style="padding:14px 16px;border-radius:16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);font-size:15px">Housing developments</span>
+        <span style="padding:14px 16px;border-radius:16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);font-size:15px">Workplace &amp; fleet charging</span>
+      </div>
+      <a href="#contact" data-magnetic="" style="align-self:flex-start;height:56px;padding:0 10px 0 26px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:17px;font-weight:600;display:flex;align-items:center;gap:16px" style-hover="color:#0E1110;background:#d8f86f">Discuss your project <span aria-hidden="true" style="width:38px;height:38px;border-radius:50%;background:#0E1110;color:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></a>
+    </div>
+    <div style="flex:1 1 440px;position:relative;min-height:360px">
+      <img data-parallax="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202152_43397c3d-a9b0-4df4-9733-8bc187aad254.png" alt="Terrace of new-build homes, each with its own air source heat pump" style="position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover">
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg, #0E1110 0%, rgba(14,17,16,0) 40%)"></div>
+    </div>
+  </div>
+</section>
+
+<section id="news" data-screen-label="09 News" style="padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(28px,3vw,40px)">
+  <div data-reveal="" style="display:flex;flex-wrap:wrap;gap:24px 60px;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;flex-direction:column;gap:20px;max-width:640px">
+      <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#NewsAndInsights</span>
+      <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em">Straight answers, written down.</h2>
+    </div>
+    <a href="News.dc.html" style="height:52px;padding:0 26px;border-radius:26px;background:#0E1110;color:#fff;font-size:16px;display:flex;align-items:center" style-hover="color:#fff;background:#262B27">All articles</a>
+  </div>
+  <dc-import name="NewsGrid" limit="3" featured="false" hint-size="100%,560px"></dc-import>
+</section>
+
+<section id="faq" data-screen-label="10 FAQ" style="background:#F1F1EF;box-shadow:0 0 0 100vmax #F1F1EF;clip-path:inset(0 -100vmax);padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(36px,4vw,64px);align-items:flex-start">
+  <div data-reveal="" style="flex:1 1 320px;max-width:460px;display:flex;flex-direction:column;gap:24px">
+    <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:14px;font-weight:500">#FAQ</span>
+    <h2 style="margin:0;font-size:clamp(38px,4.4vw,64px);font-weight:600;line-height:1.15;letter-spacing:-0.02em">Good questions to ask.</h2>
+    <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:#6C7566">Can't see yours? Email <a href="mailto:customerservice@sk-energy.co.uk" style="color:#0E1110;text-decoration:underline;text-decoration-color:#cbf24c;text-decoration-thickness:2px;text-underline-offset:4px">customerservice@sk-energy.co.uk</a></p>
+  </div>
+  <div style="flex:1 1 560px;display:flex;flex-direction:column;gap:10px">
+    <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="7">
+      <div style="border-radius:24px;background:#fff;overflow:hidden">
+        <h3 style="margin:0">
+          <button type="button" id="{{ f.btnId }}" aria-expanded="{{ f.open }}" aria-controls="{{ f.panelId }}" onClick="{{ f.toggle }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:clamp(18px,2vw,22px) clamp(18px,2vw,24px);background:none;border:0;text-align:left;font-size:18px;font-weight:600;color:#0E1110;cursor:pointer">
+            <span>{{ f.q }}</span>
+            <span aria-hidden="true" style="{{ f.iconStyle }}">+</span>
+          </button>
+        </h3>
+        <sc-if value="{{ f.open }}">
+          <div id="{{ f.panelId }}" role="region" aria-labelledby="{{ f.btnId }}" data-faq-panel="" style="padding:0 24px 24px;font-size:16px;line-height:1.6;color:#4F574A;max-width:680px">{{ f.a }}</div>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="contact" data-screen-label="11 Contact" style="background:#0E1110;color:#fff">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,7vw,100px) clamp(20px,4.6vw,66px);display:flex;flex-wrap:wrap;gap:clamp(36px,4vw,64px);align-items:stretch">
+    <div data-reveal="" style="flex:1 1 400px;position:relative;min-height:420px;border-radius:32px;overflow:hidden;background:#262B27">
+      <img data-parallax="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202258_c2b75f2f-fb83-4325-a765-07ce1dbc7065.png" alt="Warm stone-walled living room with a dog asleep on the floor" style="position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover">
+      <div style="position:absolute;inset:0;background:linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 50%)"></div>
+      <div style="position:absolute;left:28px;right:28px;bottom:28px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-size:14px;color:#cbf24c;font-weight:600">Prefer email?</span>
+        <a href="mailto:customerservice@sk-energy.co.uk" style="color:#fff;font-size:clamp(17px,1.6vw,22px);font-weight:600;word-break:break-word" style-hover="color:#cbf24c">customerservice@sk-energy.co.uk</a>
+        <span style="font-size:14px;color:rgba(255,255,255,0.75)">Suite 2, Abtel Building, Pitreavie Business Park, Dunfermline, Fife, KY11 8US</span>
+      </div>
+    </div>
+    <div data-reveal="" style="flex:1 1 520px;display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h2 style="margin:0;font-size:clamp(36px,4vw,56px);font-weight:600;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance">Let's work out what makes sense for your property.</h2>
+        <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:rgba(255,255,255,0.72)">Tell us a little about your project. We'll help you understand the options worth exploring.</p>
+      </div>
+      <form novalidate="" onSubmit="{{ submit }}" aria-describedby="form-status" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px">
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><label>Leave this field empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="f-name" style="font-size:14px;font-weight:500">Name</label>
+          <input id="f-name" name="name" autocomplete="name" aria-invalid="{{ inv.name }}" aria-describedby="e-name" style="height:54px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#fff;padding:0 22px;font-size:16px" style-focus="border-color:#cbf24c;outline:none">
+          <sc-if value="{{ errors.name }}"><span id="e-name" role="alert" style="font-size:13px;color:#ffb4a1">{{ errors.name }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="f-email" style="font-size:14px;font-weight:500">Email address</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" aria-invalid="{{ inv.email }}" aria-describedby="e-email" style="height:54px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#fff;padding:0 22px;font-size:16px" style-focus="border-color:#cbf24c;outline:none">
+          <sc-if value="{{ errors.email }}"><span id="e-email" role="alert" style="font-size:13px;color:#ffb4a1">{{ errors.email }}</span></sc-if>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="f-phone" style="font-size:14px;font-weight:500">Phone <span style="color:rgba(255,255,255,0.6);font-weight:400">(optional)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" style="height:54px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#fff;padding:0 22px;font-size:16px" style-focus="border-color:#cbf24c;outline:none">
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <label for="f-postcode" style="font-size:14px;font-weight:500">Postcode</label>
+          <input id="f-postcode" name="postcode" autocomplete="postal-code" aria-invalid="{{ inv.postcode }}" aria-describedby="e-postcode" style="height:54px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#fff;padding:0 22px;font-size:16px;text-transform:uppercase" style-focus="border-color:#cbf24c;outline:none">
+          <sc-if value="{{ errors.postcode }}"><span id="e-postcode" role="alert" style="font-size:13px;color:#ffb4a1">{{ errors.postcode }}</span></sc-if>
+        </div>
+        <fieldset aria-describedby="e-type" style="grid-column:1/-1;border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:8px">
+          <legend style="font-size:14px;font-weight:500;margin-bottom:8px;padding:0">I am a…</legend>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <label style="display:flex;align-items:center;gap:10px;height:48px;padding:0 20px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);font-size:15px;cursor:pointer" style-hover="border-color:#cbf24c"><input type="radio" name="type" value="Homeowner" style="accent-color:#cbf24c;width:18px;height:18px;margin:0">Homeowner</label>
+            <label style="display:flex;align-items:center;gap:10px;height:48px;padding:0 20px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);font-size:15px;cursor:pointer" style-hover="border-color:#cbf24c"><input type="radio" name="type" value="Business" style="accent-color:#cbf24c;width:18px;height:18px;margin:0">Business</label>
+            <label style="display:flex;align-items:center;gap:10px;height:48px;padding:0 20px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);font-size:15px;cursor:pointer" style-hover="border-color:#cbf24c"><input type="radio" name="type" value="Developer" style="accent-color:#cbf24c;width:18px;height:18px;margin:0">Developer</label>
+          </div>
+          <sc-if value="{{ errors.type }}"><span id="e-type" role="alert" style="font-size:13px;color:#ffb4a1">{{ errors.type }}</span></sc-if>
+        </fieldset>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px">
+          <label for="f-service" style="font-size:14px;font-weight:500">Service of interest</label>
+          <select id="f-service" name="service" style="height:54px;border-radius:999px;border:1px solid rgba(255,255,255,0.22);background:#1A1E1C;color:#fff;padding:0 22px;font-size:16px" style-focus="border-color:#cbf24c;outline:none">
+            <option value="Not sure yet">Not sure yet, I'd like advice</option>
+            <option>Solar PV</option>
+            <option>Battery Storage</option>
+            <option>Heat Pumps</option>
+            <option>EV Chargers</option>
+            <option>Underfloor Heating</option>
+            <option>More than one</option>
+          </select>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px">
+          <label for="f-details" style="font-size:14px;font-weight:500">Project details <span style="color:rgba(255,255,255,0.6);font-weight:400">(optional)</span></label>
+          <textarea id="f-details" name="details" rows="4" style="border-radius:24px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.06);color:#fff;padding:16px 22px;font-size:16px;resize:vertical" style-focus="border-color:#cbf24c;outline:none"></textarea>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:6px">
+          <label style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:rgba(255,255,255,0.8);cursor:pointer"><input type="checkbox" name="consent" value="yes" aria-invalid="{{ inv.consent }}" aria-describedby="e-consent" style="accent-color:#cbf24c;width:18px;height:18px;margin:2px 0 0;flex-shrink:0">I agree to SK Energy using these details to respond to my enquiry, as set out in the <a href="https://sk-energy.co.uk/privacy-policy/" style="color:#cbf24c;text-decoration:underline">privacy policy</a>.</label>
+          <sc-if value="{{ errors.consent }}"><span id="e-consent" role="alert" style="font-size:13px;color:#ffb4a1">{{ errors.consent }}</span></sc-if>
+        </div>
+        <div style="grid-column:1/-1;display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+          <button type="submit" disabled="{{ loading }}" data-magnetic="" style="height:58px;padding:0 10px 0 28px;border-radius:999px;border:0;background:#cbf24c;color:#0E1110;font-size:17px;font-weight:600;display:flex;align-items:center;gap:16px;cursor:pointer" style-hover="background:#d8f86f">{{ submitLabel }} <span aria-hidden="true" style="width:40px;height:40px;border-radius:50%;background:#0E1110;color:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></button>
+          <div id="form-status" role="status" aria-live="polite" style="font-size:14px;line-height:1.5;max-width:420px">
+            <sc-if value="{{ st.success }}"><span style="color:#cbf24c">Thank you, your enquiry has been sent. We'll be in touch soon.</span></sc-if>
+            <sc-if value="{{ st.error }}"><span style="color:#ffb4a1">Sorry, something went wrong and your enquiry wasn't sent. Please try again or email customerservice@sk-energy.co.uk.</span></sc-if>
+            <sc-if value="{{ st.unconfigured }}"><span style="color:#ffd88a">Online submissions aren't connected yet, so nothing has been sent. Please email customerservice@sk-energy.co.uk for now.</span></sc-if>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<dc-import name="SiteFooter" cta="false" hint-size="100%,500px"></dc-import>
+
+<sc-if value="{{ videoOpen }}">
+  <div role="dialog" aria-modal="true" aria-label="SK Energy film" onClick="{{ closeVideo }}" style="position:fixed;inset:0;z-index:150;background:rgba(10,10,10,0.86);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;padding:24px">
+    <div style="position:relative;width:min(1100px,100%);aspect-ratio:16/9;border-radius:28px;overflow:hidden;background:#000">
+      <video src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260915_141616_b6424ee7-6dab-4f0f-b8d6-e0b859c4bec8.mp4" autoplay="" controls="" playsinline="" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+      <button type="button" onClick="{{ closeVideo }}" aria-label="Close film" style="position:absolute;top:16px;right:16px;height:44px;padding:0 18px;border-radius:999px;border:0;background:#cbf24c;color:#0E1110;font-size:15px;font-weight:600;cursor:pointer">Close</button>
+    </div>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;full&quot;,&quot;subtle&quot;,&quot;off&quot;],&quot;default&quot;:&quot;full&quot;,&quot;tsType&quot;:&quot;'full'|'subtle'|'off'&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;heroMedia&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;image&quot;,&quot;video&quot;],&quot;default&quot;:&quot;image&quot;,&quot;tsType&quot;:&quot;'image'|'video'&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;submitEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Enquiry form&quot;},&quot;testimonials&quot;:{&quot;editor&quot;:null,&quot;default&quot;:[],&quot;tsType&quot;:&quot;{quote:string,name:string,install:string}[]&quot;}}">
+class Component extends DCLogic {
+  state = { step: 0, scrolled: false, wide: true, svcOpen: false, mobOpen: false, proj: 0, faq: 0, videoOpen: false, errors: {}, status: 'idle' };
+  cleanups = [];
+  tTrack = React.createRef();
+  tScroll(dir) {
+    const el = this.tTrack.current; if (!el) return;
+    const card = el.querySelector('figure'); const step = card ? card.getBoundingClientRect().width + 16 : el.clientWidth * 0.8;
+    const max = el.scrollWidth - el.clientWidth;
+    let to = el.scrollLeft + dir * step;
+    if (to > max + 4) to = 0; else if (to < -4) to = max;
+    el.scrollTo({ left: to, behavior: 'smooth' });
+  }
+  componentDidMount() {
+    this.onScroll = () => { const s = window.scrollY > 60; if (s !== this.state.scrolled) this.setState({ scrolled: s }); const el = document.getElementById('how-it-works'); if (el && this.state.wide) { const r = el.getBoundingClientRect(); const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - window.innerHeight))); const st = Math.min(3, Math.floor(p * 4)); if (st !== this.state.step) this.setState({ step: st }); } };
+    this.onResize = () => { const w = window.innerWidth >= 1080; if (w !== this.state.wide) this.setState({ wide: w, mobOpen: false }); };
+    this.onKey = e => { if (e.key === 'Escape') this.setState({ svcOpen: false, mobOpen: false, videoOpen: false }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('keydown', this.onKey);
+    this.onResize(); this.onScroll();
+    setTimeout(() => this.initMotion(), 0);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('keydown', this.onKey);
+    this.cleanups.forEach(f => { try { f(); } catch (e) {} });
+  }
+  componentDidUpdate() {
+    const faq = this.state.faq;
+    if (this.M && this._faq !== faq) {
+      const p = document.querySelector('[data-faq-panel]');
+      if (p) this.M.animate(p, { opacity: [0, 1], y: [-8, 0] }, { duration: 0.45, ease: [0.22, 1, 0.36, 1] });
+    }
+    this._faq = faq;
+  }
+
+  async initMotion() {
+    const mode = this.props.motion ?? 'full';
+    if (mode === 'off' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let M;
+    try { M = await import('https://cdn.jsdelivr.net/npm/motion@11.11.17/+esm'); } catch (e) { return; }
+    this.M = M;
+    const { animate, inView, scroll, stagger } = M;
+    const ease = [0.22, 1, 0.36, 1];
+    const d = mode === 'subtle' ? 14 : 40;
+    const add = f => f && this.cleanups.push(f);
+    const hero = document.querySelector('[data-hero]');
+    const hb = document.querySelector('[data-hero-bg]');
+    if (hb) {
+      animate(hb, { scale: [1.14, 1] }, { duration: 2.2, ease });
+      if (mode === 'full') add(scroll(animate(hb, { y: [0, 160] }, { ease: 'linear' }), { target: hero, offset: ['start start', 'end start'] }));
+    }
+    document.querySelectorAll('[data-hero-in]').forEach((el, i) => {
+      animate(el, { opacity: [0, 1], y: [d, 0], filter: ['blur(10px)', 'blur(0px)'] }, { duration: 1.1, delay: 0.2 + i * 0.12, ease });
+    });
+    document.querySelectorAll('[data-hotspot]').forEach((el, i) => {
+      animate(el, { opacity: [0, 1] }, { duration: 0.8, delay: 1 + i * 0.18, ease });
+      const p = el.querySelector('[data-pulse]');
+      if (p && mode === 'full') animate(p, { scale: [0.6, 1.9], opacity: [0.9, 0] }, { duration: 2.2, delay: 1.4 + i * 0.3, repeat: Infinity, ease: 'easeOut' });
+    });
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      animate(el, { opacity: 0, y: d }, { duration: 0 });
+      add(inView(el, () => { animate(el, { opacity: 1, y: 0 }, { duration: 1, ease }); }, { amount: 0.15 }));
+    });
+    document.querySelectorAll('[data-stagger]').forEach(el => {
+      const kids = Array.from(el.children);
+      animate(kids, { opacity: 0, y: d }, { duration: 0 });
+      add(inView(el, () => { animate(kids, { opacity: 1, y: 0 }, { duration: 0.9, delay: stagger(0.09), ease }); }, { amount: 0.1 }));
+    });
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const to = +el.dataset.count;
+      add(inView(el, () => { animate(0, to, { duration: 1.8, ease, onUpdate: v => { el.textContent = Math.round(v).toLocaleString('en-GB'); } }); }, { amount: 0.6 }));
+    });
+    const line = document.querySelector('[data-line]');
+    if (line) add(scroll(animate(line, { scaleY: [0, 1] }, { ease: 'linear' }), { target: document.querySelector('[data-process]'), offset: ['start start', 'end end'] }));
+    if (mode === 'full') document.querySelectorAll('[data-parallax]').forEach(img => {
+      add(scroll(animate(img, { y: [-28, 28] }, { ease: 'linear' }), { target: img.parentElement, offset: ['start end', 'end start'] }));
+    });
+    document.querySelectorAll('[data-hover-zoom]').forEach(card => {
+      const img = card.querySelector('[data-zoom]');
+      if (!img) return;
+      const en = () => animate(img, { scale: 1.07 }, { duration: 0.9, ease });
+      const lv = () => animate(img, { scale: 1 }, { duration: 0.9, ease });
+      card.addEventListener('pointerenter', en); card.addEventListener('pointerleave', lv);
+      add(() => { card.removeEventListener('pointerenter', en); card.removeEventListener('pointerleave', lv); });
+    });
+    if (mode === 'full' && window.matchMedia('(pointer:fine)').matches) {
+      const bindMag = () => document.querySelectorAll('[data-magnetic]').forEach(el => {
+        if (el.__mag) return; el.__mag = true;
+        el.addEventListener('pointermove', e => { const r = el.getBoundingClientRect(); animate(el, { x: (e.clientX - r.left - r.width / 2) * 0.18, y: (e.clientY - r.top - r.height / 2) * 0.3 }, { type: 'spring', stiffness: 260, damping: 18 }); });
+        el.addEventListener('pointerleave', () => animate(el, { x: 0, y: 0 }, { type: 'spring', stiffness: 260, damping: 18 }));
+      });
+      bindMag(); this.bindMag = bindMag;
+    }
+  }
+  submit = async e => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const v = Object.fromEntries(new FormData(form));
+    if (v.company_website) return;
+    const err = {};
+    if (!(v.name || '').trim()) err.name = 'Please enter your name.';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test((v.email || '').trim())) err.email = 'Please enter a valid email address.';
+    if (!/^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/.test((v.postcode || '').trim())) err.postcode = 'Please enter a valid UK postcode, e.g. KY11 8US.';
+    if (!v.type) err.type = 'Please choose homeowner, business or developer.';
+    if (!v.consent) err.consent = 'Please confirm we can use your details to respond.';
+    this.setState({ errors: err, status: 'idle' });
+    const first = Object.keys(err)[0];
+    if (first) { const el = form.querySelector(`[name="${first}"]`); el && el.focus(); return; }
+    const endpoint = (this.props.submitEndpoint || '').trim();
+    if (!endpoint) { this.setState({ status: 'unconfigured' }); return; }
+    this.setState({ status: 'loading' });
+    try {
+      delete v.company_website;
+      const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(v) });
+      if (!r.ok) throw new Error(r.status);
+      form.reset();
+      this.setState({ status: 'success' });
+    } catch (x) { this.setState({ status: 'error' }); }
+  };
+  renderVals() {
+    const s = this.state;
+    const wide = s.wide;
+    const navStyle = {
+      position: 'fixed', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20,
+      transition: 'top .5s cubic-bezier(.22,1,.36,1), left .5s cubic-bezier(.22,1,.36,1), right .5s cubic-bezier(.22,1,.36,1), background .4s, padding .4s, box-shadow .4s',
+      borderRadius: 999,
+      ...(s.scrolled
+        ? { top: 12, left: 'max(12px, calc(50% - 680px))', right: 'max(12px, calc(50% - 680px))', padding: '8px 8px 8px 22px', background: 'rgba(14,17,16,0.74)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', boxShadow: '0 20px 40px -20px rgba(0,0,0,0.5)' }
+        : { top: 'clamp(20px,3vw,44px)', left: 'clamp(20px,4.6vw,66px)', right: 'clamp(20px,4.6vw,66px)', padding: '0', background: 'transparent', boxShadow: 'none' })
+    };
+    const projData = [
+      { slug: 'dunfermline-family-home', short: 'Family home', type: 'Residential retrofit', location: 'Dunfermline, Fife', title: 'Solar PV and battery for a busy family home', challenge: 'Make better use of daytime generation in a household that is busiest in the evening.', solution: '5.2 kWp solar PV paired with a right-sized battery and app monitoring.', img: 'https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260914_083236_ddd03874-b223-4eaa-82b1-0d952bd512d9.png', alt: 'Semi-detached Scottish home with solar panels on the roof' },
+      { slug: 'kinross-farmhouse', short: 'Off the oil', type: 'Heating upgrade', location: 'Kinross', title: 'Kinross farmhouse, off the oil', challenge: 'Replace an ageing oil boiler in a large, exposed stone farmhouse.', solution: '12 kW heat pump, underfloor heating, solar and battery storage.', img: 'https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260914_132310_9ab67218-411a-4d4c-9c67-dae85455664e.png', alt: 'Stone house in open countryside under a cloudy sky' },
+      { slug: 'rosyth-workshop', short: 'Workshop solar', type: 'Commercial', location: 'Rosyth, Fife', title: 'Rosyth engineering workshop', challenge: 'Cut daytime electricity costs driven by machinery, and add staff charging.', solution: '9.9 kWp roof solar, two workplace chargers and site monitoring.', img: 'https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260914_083236_369e095f-2f73-44cc-bf52-abf54d15acc0.png', alt: 'Rows of solar panels across a commercial roof' },
+      { slug: 'halbeath-development', short: '26 plots', type: 'New build', location: 'Halbeath, Fife', title: 'Halbeath, 26 plots on programme', challenge: 'Low-carbon heat and EV provision on every plot without delaying the build.', solution: 'Heat pump, underfloor heating and EV provision sequenced with the trades.', img: 'https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202153_95e59ab4-8e19-448f-8bc5-dc71da09467f.png', alt: 'Aerial view of a new-build development with solar on every roof' }
+    ];
+    const ez = 'cubic-bezier(.22,1,.36,1)';
+    const locs = ['Fife', 'Central Scotland', 'Central Scotland', 'Fife'];
+    const galleryStyle = wide
+      ? { display: 'flex', gap: 12, height: 'clamp(560px,46vw,660px)' }
+      : { display: 'flex', flexDirection: 'column', gap: 10 };
+    const projects = projData.map((p, i) => {
+      const open = s.proj === i;
+      const closedSize = 'clamp(112px,9vw,148px)';
+      return { ...p, open, closed: !open, location: p.location || locs[i], href: 'CaseStudy.dc.html?slug=' + p.slug, num: String(i + 1).padStart(2, '0'), openLabel: 'Show project: ' + p.title,
+        select: () => { if (s.proj !== i) this.setState({ proj: i }); },
+        cardStyle: wide
+          ? { position: 'relative', flex: open ? '1 1 auto' : '0 0 ' + closedSize, minWidth: 0, borderRadius: 32, overflow: 'hidden', cursor: open ? 'default' : 'pointer', background: '#262B27', transition: 'flex 0.9s ' + ez }
+          : { position: 'relative', height: open ? 'clamp(480px,130vw,620px)' : 84, borderRadius: 28, overflow: 'hidden', cursor: open ? 'default' : 'pointer', background: '#262B27', transition: 'height 0.8s ' + ez },
+        imgStyle: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: open ? 'scale(1)' : 'scale(1.15)', filter: open ? 'none' : 'grayscale(0.5) brightness(0.7)', transition: 'transform 1.2s ' + ez + ', filter .6s' },
+        shadeStyle: { position: 'absolute', inset: 0, background: open ? 'linear-gradient(0deg, rgba(14,17,16,0.55) 0%, rgba(14,17,16,0) 45%)' : 'rgba(14,17,16,0.35)', transition: 'background .6s' },
+        tabStyle: wide
+          ? { position: 'absolute', inset: 0, width: '100%', border: 0, background: 'transparent', color: '#fff', cursor: 'pointer', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', padding: '28px 0', fontFamily: 'inherit' }
+          : { position: 'absolute', inset: 0, width: '100%', border: 0, background: 'transparent', color: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 16, padding: '0 24px', fontFamily: 'inherit', textAlign: 'left' },
+        labelStyle: wide
+          ? { writingMode: 'vertical-rl', transform: 'rotate(180deg)', fontSize: 20, fontWeight: 600, letterSpacing: '-0.01em', whiteSpace: 'nowrap' }
+          : { fontSize: 18, fontWeight: 600 } };
+    });
+    const projCounter = String(s.proj + 1).padStart(2, '0') + ' / ' + String(projData.length).padStart(2, '0');
+    const U = 'https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_';
+    const stepData = [
+      ['Initial consultation', 'We get to know the property, how you use energy, your priorities and your budget.', 'A conversation, not a sales pitch.', U + '20260914_085250_d2a1ec99-ab29-4d3a-af23-539ad8c024d7.png', 'Adviser talking through options with homeowners at their kitchen table'],
+      ['Survey and system design', 'We assess the building and develop a technically appropriate solution with transparent costs.', 'A clear specification with itemised costs.', U + '20261027_202221_e6ffe8fc-10d6-4bf4-a687-bec33063e28c.png', 'Surveyor checking a slate roof with a tablet'],
+      ['Professional installation', 'Our team coordinates and completes the work with care for safety, quality and minimal disruption.', 'Our own engineers, start to finish.', U + '20261027_202459_76ffe792-af9c-483b-8131-0f1ffa63bf51.png', 'SK Energy electricians wiring an inverter and consumer unit'],
+      ['Monitoring and aftercare', 'We help you understand how your system is performing, with ongoing support when you need it.', 'The same team, long after we leave.', U + '20261027_202258_62170a2d-7ef7-4bbb-9f51-89ba35c34821.png', 'Homeowners checking their energy app on a tablet']
+    ];
+    const step = s.step;
+    const steps = stepData.map(([title, desc, promise, img, alt], i) => {
+      const on = i === step, done = i < step;
+      return { title, desc, img, alt, num: '0' + (i + 1), current: on ? 'step' : 'false',
+        go: () => { const el = document.getElementById('how-it-works'); if (!el) return; const top = el.getBoundingClientRect().top + window.scrollY; const span = el.offsetHeight - window.innerHeight; window.scrollTo({ top: top + span * (i + 0.5) / 4, behavior: 'smooth' }); },
+        dotStyle: { width: 48, height: 48, flexShrink: 0, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 15, fontWeight: 600, position: 'relative', zIndex: 1, background: on ? '#cbf24c' : done ? '#0E1110' : '#fff', color: on ? '#0E1110' : done ? '#cbf24c' : '#6C7566', boxShadow: on ? '0 0 0 8px rgba(203,242,76,0.3)' : '0 0 0 1px #E8E8E5', transform: on ? 'scale(1.08)' : 'scale(1)', transition: 'all .5s ' + ez },
+        textStyle: { display: 'flex', flexDirection: 'column', gap: 6, paddingTop: 11, opacity: on ? 1 : 0.5, transition: 'opacity .5s' },
+        descStyle: { fontSize: 15, lineHeight: 1.5, color: '#6C7566', maxHeight: on ? 80 : 0, opacity: on ? 1 : 0, overflow: 'hidden', transition: 'max-height .6s ' + ez + ', opacity .5s' },
+        imgStyle: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: on ? 1 : 0, transform: on ? 'scale(1)' : 'scale(1.08)', transition: 'opacity .8s ' + ez + ', transform 1.4s ' + ez },
+        barStyle: { display: 'block', height: '100%', background: '#cbf24c', width: i <= step ? '100%' : '0%', transition: 'width .6s ' + ez } };
+    });
+    const NU = 'https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_';
+    const newsCats = ['All', 'Solar PV', 'Battery Storage', 'Heat Pumps', 'EV Chargers', 'Underfloor Heating', 'Company news'];
+    const newsData = [
+      { cat: 'Heat Pumps', kind: 'Guide', read: '6 min read', date: '14 Oct 2026', title: 'Is your home ready for a heat pump? What a heat-loss survey tells us', excerpt: 'Why we measure before we recommend, and what the numbers mean for system size and comfort.', img: NU + '20260914_083237_a5318e95-e922-4024-bdba-7624ac0372fe.png' },
+      { cat: 'Solar PV', kind: 'Guide', read: '5 min read', date: '2 Oct 2026', title: 'How roof orientation and shading affect solar generation in Scotland', excerpt: 'East, west or south? A practical look at what matters most when planning an array.', img: NU + '20260914_083236_6b42cd05-3e46-4c93-a40b-44737924029a.png' },
+      { cat: 'Battery Storage', kind: 'Explainer', read: '4 min read', date: '24 Sep 2026', title: 'Battery sizing explained: matching storage to how you use energy', excerpt: 'Bigger isn’t always better. How daily usage patterns shape the right battery choice.', img: NU + '20260914_083236_ddd03874-b223-4eaa-82b1-0d952bd512d9.png' },
+      { cat: 'EV Chargers', kind: 'Guide', read: '4 min read', date: '11 Sep 2026', title: 'Choosing a home EV charger: tethered, untethered and smart features', excerpt: 'The questions worth asking before you pick a charge point for your driveway.', img: NU + '20260914_085250_e01a120a-2741-42df-80e4-6144acd12e34.png' },
+      { cat: 'Underfloor Heating', kind: 'Explainer', read: '5 min read', date: '28 Aug 2026', title: 'Underfloor heating and heat pumps: why they work well together', excerpt: 'Low flow temperatures, even warmth and fewer radiators. How the two systems complement each other.', img: NU + '20260914_085250_c7bb5830-a7f7-4686-82c1-f9f340ca416b.png' },
+      { cat: 'Company news', kind: 'News', read: '2 min read', date: '15 Aug 2026', title: 'SK Energy opens a York office at Tower Court', excerpt: 'Our new base at Clifton Moor joins our Fife office at Pitreavie Business Park.', img: NU + '20260914_083236_17878cc6-17ea-4a5a-91f6-40261fcae547.png' },
+      { cat: 'Solar PV', kind: 'Guide', read: '3 min read', date: '30 Jul 2026', title: 'What to expect on installation day', excerpt: 'Scaffolding, access, power-down and commissioning: a step-by-step walkthrough.', img: NU + '20260914_083236_a9bbb227-93a3-4a2f-9012-b9872b6415a1.png' }
+    ];
+    const nt = s.newsTab;
+    const pickTab = i => this.setState({ newsTab: i });
+    const newsTabs = newsCats.map((label, i) => {
+      const sel = i === nt;
+      const count = i === 0 ? newsData.length : newsData.filter(n => n.cat === label).length;
+      return { label, count, id: 'news-tab-' + i, selected: sel ? 'true' : 'false', tabindex: sel ? '0' : '-1', pick: () => pickTab(i),
+        style: { flexShrink: 0, height: 46, padding: '0 8px 0 20px', borderRadius: 999, border: sel ? '1px solid #0E1110' : '1px solid #D3D5D0', background: sel ? '#0E1110' : '#fff', color: sel ? '#fff' : '#0E1110', fontSize: 15, fontWeight: 500, display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', fontFamily: 'inherit', transition: 'background .3s, color .3s, border-color .3s' },
+        countStyle: { minWidth: 28, height: 28, padding: '0 8px', borderRadius: 999, background: sel ? '#cbf24c' : '#F1F1EF', color: '#0E1110', fontSize: 13, fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center' } };
+    });
+    const filtered = nt === 0 ? newsData : newsData.filter(n => n.cat === newsCats[nt]);
+    const newsItems = filtered.map((n, i) => {
+      const feat = nt === 0 && i === 0 && wide;
+      return { ...n, href: '/insights/',
+        cardStyle: { gridColumn: feat ? 'span 2' : 'auto', display: 'flex', flexDirection: feat ? 'row' : 'column', flexWrap: 'wrap', gap: 16, padding: 10, borderRadius: 32, background: '#F1F1EF', color: '#0E1110', overflow: 'hidden', transition: 'background .3s' },
+        mediaStyle: { flex: feat ? '1 1 320px' : '0 0 auto', height: feat ? 'auto' : 220, minHeight: 220, borderRadius: 24, overflow: 'hidden' },
+        titleStyle: { margin: 0, fontSize: feat ? 28 : 20, fontWeight: 700, lineHeight: 1.3, letterSpacing: '-0.01em', textWrap: 'pretty' } };
+    });
+    const newsKey = e => { if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return; e.preventDefault(); const n = (nt + (e.key === 'ArrowRight' ? 1 : newsCats.length - 1)) % newsCats.length; this.setState({ newsTab: n }); setTimeout(() => { const b = document.getElementById('news-tab-' + n); b && b.focus(); }, 0); };
+    const faqData = [
+      ['Which renewable energy system is right for my property?', 'It depends on the building, how you use energy and what you want to achieve. We start with a consultation and survey, then recommend only the technologies that suit your property. Sometimes that is one system; sometimes it is a combination.'],
+      ['Can solar panels work with battery storage?', 'Yes. A battery stores surplus electricity your panels generate so you can use more of it later in the day. Whether a battery makes sense depends on your usage pattern, which we look at during design.'],
+      ['How does an air source heat pump installation work?', 'We assess your home’s heat loss, then design a system sized for it, including the emitters (radiators or underfloor heating) and hot water. Installation is planned with you in advance, and we commission the system and show you how to use it.'],
+      ['Do you install EV chargers for homes and businesses?', 'Yes. We install home charge points as well as workplace and fleet charging, and can integrate charging with solar and battery systems where that’s suitable.'],
+      ['What affects the cost of an installation?', 'Mainly the size and type of system, the property itself (roof, space, existing wiring and heating), and how much enabling work is needed. You’ll receive a clear specification and itemised costs before you commit.'],
+      ['Which areas do you cover?', 'We’re based at Pitreavie Business Park in Dunfermline, Fife, and work across central Scotland. Get in touch with your postcode and we’ll confirm.'],
+      ['What support is available after installation?', 'We offer aftercare and maintenance, help with understanding your system’s performance, and warranty registration. If something isn’t working as it should, you contact the same team that installed it.']
+    ];
+    const faqs = faqData.map(([q, a], i) => {
+      const open = s.faq === i;
+      return { q, a, open, btnId: 'faq-b-' + i, panelId: 'faq-p-' + i,
+        toggle: () => this.setState({ faq: open ? -1 : i }),
+        iconStyle: { width: 36, height: 36, flexShrink: 0, borderRadius: '50%', background: open ? '#cbf24c' : '#F1F1EF', color: '#0E1110', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, fontWeight: 400, transform: open ? 'rotate(45deg)' : 'none', transition: 'transform .4s cubic-bezier(.22,1,.36,1), background .3s' } };
+    });
+    const testimonials = this.props.testimonials || [];
+    const e = s.errors;
+    if (this.bindMag) setTimeout(this.bindMag, 0);
+    return {
+      navStyle, wide, narrow: !wide,
+      svcOpen: s.svcOpen, mobOpen: s.mobOpen, videoOpen: s.videoOpen,
+      heroVideo: (this.props.heroMedia ?? 'image') === 'video',
+      toggleSvc: () => this.setState({ svcOpen: !s.svcOpen }),
+      openSvc: () => this.setState({ svcOpen: true }),
+      closeSvc: () => this.setState({ svcOpen: false }),
+      toggleMob: () => this.setState({ mobOpen: !s.mobOpen }),
+      openVideo: () => this.setState({ videoOpen: true }),
+      closeVideo: ev => { if (ev.target === ev.currentTarget || ev.currentTarget.tagName === 'BUTTON') this.setState({ videoOpen: false }); },
+      projects, galleryStyle, projCounter, steps, stepNum: '0' + (step + 1), stepTitle: stepData[step][0], stepPromise: stepData[step][2],
+      prevProj: () => this.setState({ proj: (s.proj + projData.length - 1) % projData.length }),
+      nextProj: () => this.setState({ proj: (s.proj + 1) % projData.length }),
+      faqs,
+      tTrack: this.tTrack, tPrev: () => this.tScroll(-1), tNext: () => this.tScroll(1),
+      tCards: testimonials.length ? testimonials.map(t => ({ ...t, real: true, empty: false })) : ['Solar PV & battery storage','Air source heat pump','EV charging','Commercial solar','New-build energy system'].map(x => ({ real: false, empty: true, name: 'Customer name', install: x })),
+      errors: e,
+      inv: { name: !!e.name, email: !!e.email, postcode: !!e.postcode, consent: !!e.consent },
+      submit: this.submit,
+      loading: s.status === 'loading',
+      submitLabel: s.status === 'loading' ? 'Sending…' : 'Request a consultation',
+      st: { success: s.status === 'success', error: s.status === 'error', unconfigured: s.status === 'unconfigured' }
+    };
+  }
+}
+</script>
+</body>
+</html>

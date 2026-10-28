@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>SK Energy — Case study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#0E1110;font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0E1110;text-decoration:none}
+a:hover{color:#4d5c12}
+:focus-visible{outline:2px solid #cbf24c;outline-offset:3px;border-radius:8px}
+button{font-family:inherit}
+::selection{background:#cbf24c;color:#0E1110}
+</style>
+</helmet>
+<dc-import name="SiteHeader" active="work" hint-size="100%,1px"></dc-import>
+<main id="main">
+  <dc-import name="PageHero" title="{{ c.title }}" intro="{{ c.summary }}" eyebrow="{{ c.type }}" meta="{{ c.location }}" crumb="{{ c.short }}" parent-label="Our work" parent-href="Work.dc.html" img="{{ c.img }}" alt="{{ c.alt }}" chips="{{ systemChips }}" active-chip="none" hint-size="100%,780px"></dc-import>
+
+  <section data-screen-label="Key figures" style="padding:clamp(56px,7vw,96px) clamp(20px,4.6vw,66px) 0;max-width:1440px;margin:0 auto">
+    <dl data-stagger="" style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+      <sc-for list="{{ statCards }}" as="st" hint-placeholder-count="3">
+        <div style="{{ st.style }}">
+          <dt style="{{ st.labelStyle }}">{{ st.label }}</dt>
+          <dd style="margin:0;font-size:clamp(40px,4.4vw,64px);font-weight:600;letter-spacing:-0.03em;line-height:1">{{ st.value }}</dd>
+        </div>
+      </sc-for>
+    </dl>
+  </section>
+
+  <section data-screen-label="Story" style="padding:clamp(56px,7vw,96px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,80px);align-items:flex-start">
+    <aside style="flex:1 1 280px;max-width:360px;display:flex;flex-direction:column;gap:20px">
+      <div style="padding:clamp(20px,2.2vw,26px);border-radius:28px;background:#F1F1EF;display:flex;flex-direction:column;gap:16px">
+        <span style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#6C7566">What we installed</span>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ c.systems }}" as="sy" hint-placeholder-count="3">
+            <li style="display:flex;gap:10px;align-items:center;font-size:16px;font-weight:500"><span style="width:10px;height:10px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 4px rgba(203,242,76,0.3)"></span>{{ sy }}</li>
+          </sc-for>
+        </ul>
+        <div style="border-top:1px solid #D3D5D0;padding-top:16px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#6C7566">Services</span>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ svcLinks }}" as="sv" hint-placeholder-count="2">
+              <a href="{{ sv.href }}" style="padding:5px 13px;border-radius:999px;border:1px solid #0E1110;font-size:14px" style-hover="background:#0E1110;color:#fff">{{ sv.title }}</a>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+      <a href="Contact.dc.html" style="height:52px;padding:0 24px;border-radius:999px;background:#0E1110;color:#fff;font-size:16px;font-weight:500;display:flex;align-items:center;justify-content:center" style-hover="color:#fff;background:#262B27">Discuss a similar project</a>
+    </aside>
+    <div style="flex:2 1 520px;display:flex;flex-direction:column;gap:clamp(40px,4vw,56px)">
+      <sc-for list="{{ story }}" as="b" hint-placeholder-count="3">
+        <article data-reveal="" style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding-top:28px;border-top:1px solid #E8E8E5">
+          <span style="width:48px;height:48px;border-radius:50%;background:#0E1110;color:#cbf24c;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center">{{ b.num }}</span>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <h2 style="margin:0;font-size:clamp(26px,2.4vw,34px);font-weight:600;letter-spacing:-0.02em">{{ b.h }}</h2>
+            <p style="margin:0;font-size:18px;line-height:1.65;color:#4A5248;max-width:680px;text-wrap:pretty">{{ b.p }}</p>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="Gallery" style="padding:0 clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto">
+    <div data-stagger="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+      <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="0">
+        <div style="{{ g.style }}"><img data-parallax="" src="{{ g.src }}" alt="{{ g.alt }}" style="position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover"></div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="Quote" style="padding:clamp(56px,7vw,96px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto">
+    <figure data-reveal="" style="margin:0;padding:clamp(32px,5vw,72px);border-radius:40px;background:#cbf24c;color:#0E1110;display:flex;flex-direction:column;gap:28px">
+      <span aria-hidden="true" style="width:64px;height:64px;border-radius:50%;background:#0E1110;color:#cbf24c;font-size:44px;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center;padding-top:16px">“</span>
+      <blockquote style="margin:0;font-size:clamp(26px,3vw,44px);font-weight:600;line-height:1.25;letter-spacing:-0.02em;max-width:1000px;text-wrap:balance">{{ quote.text }}</blockquote>
+      <figcaption style="display:flex;flex-direction:column;gap:2px;font-size:16px"><b style="font-weight:600">{{ quote.name }}</b><span style="color:#3a4214">{{ quote.role }}</span></figcaption>
+    </figure>
+  </section>
+
+  <section data-screen-label="Next project" style="padding:0 clamp(20px,4.6vw,66px) clamp(24px,3vw,40px);max-width:1440px;margin:0 auto">
+    <a href="{{ next.href }}" data-hover-zoom="" style="display:flex;flex-wrap:wrap;align-items:stretch;border-radius:clamp(28px,3vw,40px);overflow:hidden;background:#F1F1EF;color:#0E1110;min-height:280px" style-hover="color:#0E1110">
+      <div style="flex:1 1 380px;padding:clamp(28px,3.4vw,48px);display:flex;flex-direction:column;gap:14px;justify-content:center">
+        <span style="font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#6C7566">Next project</span>
+        <h2 style="margin:0;font-size:clamp(28px,3vw,44px);font-weight:600;letter-spacing:-0.02em;line-height:1.15">{{ next.title }}</h2>
+        <span style="display:flex;align-items:center;gap:12px;font-size:16px;font-weight:600">View case study <span aria-hidden="true" style="width:40px;height:40px;border-radius:50%;background:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></span>
+      </div>
+      <div style="flex:1 1 380px;position:relative;min-height:240px;overflow:hidden"><img data-zoom="" src="{{ next.img }}" alt="{{ next.alt }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div>
+    </a>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,900px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;slug&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dunfermline-family-home&quot;,&quot;kinross-farmhouse&quot;,&quot;rosyth-workshop&quot;,&quot;halbeath-development&quot;],&quot;default&quot;:&quot;dunfermline-family-home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { d: null };
+  componentDidMount() {
+    import(new URL('site-data.js', location.href).href).then(d => this.setState({ d }, () => { const c = this.current(); if (c) document.title = 'SK Energy — ' + c.title; }));
+    import(new URL('site-motion.js', location.href).href).then(m => m.init());
+  }
+  current() {
+    const d = this.state.d; if (!d) return null;
+    const slug = new URLSearchParams(location.search).get('slug') || this.props.slug;
+    return d.CASES.find(x => x.slug === slug) || d.CASES[0];
+  }
+  renderVals() {
+    const d = this.state.d, c = this.current();
+    if (!c) return { c: { systems: [] }, statCards: [], story: [], gallery: [], svcLinks: [], systemChips: [], quote: {}, next: {} };
+    const i = d.CASES.indexOf(c), nx = d.CASES[(i + 1) % d.CASES.length];
+    return {
+      c,
+      systemChips: c.systems.map(s => ({ label: s, href: '#main', key: s })),
+      statCards: c.stats.map(([value, label], k) => {
+        const dark = k === 0;
+        return { value, label,
+          style: { padding: 'clamp(24px,2.6vw,36px)', borderRadius: 32, background: dark ? '#0E1110' : '#F1F1EF', color: dark ? '#cbf24c' : '#0E1110', display: 'flex', flexDirection: 'column-reverse', gap: 14, minHeight: 200, justifyContent: 'flex-end' },
+          labelStyle: { fontSize: 15, color: dark ? 'rgba(255,255,255,0.7)' : '#6C7566', marginTop: 'auto' } };
+      }),
+      story: [['The brief', c.challenge], ['What we did', c.solution], ['The result', c.results]].map(([h, p], k) => ({ h, p, num: '0' + (k + 1) })),
+      gallery: c.gallery.map((src, k) => ({ src, alt: c.title + ' — photo ' + (k + 1), style: { position: 'relative', height: k === 0 ? 'clamp(360px,34vw,480px)' : 'clamp(360px,34vw,480px)', borderRadius: 32, overflow: 'hidden', background: '#E8E8E5', gridColumn: k === 0 ? 'span 1' : 'auto' } })),
+      svcLinks: c.services.map(s => d.SERVICES.find(x => x.slug === s)).filter(Boolean).map(s => ({ title: s.title, href: d.LINKS.service(s.slug) })),
+      quote: { text: c.quote[0], name: c.quote[1], role: c.quote[2] },
+      next: { title: nx.title, img: nx.img, alt: nx.alt, href: d.LINKS.caseStudy(nx.slug) }
+    };
+  }
+}
+</script>
+</body>
+</html>

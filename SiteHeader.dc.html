@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<a href="#main" style="position:absolute;left:-9999px;top:8px;z-index:200;background:#cbf24c;color:#0E1110;padding:10px 16px;border-radius:999px;font-weight:600" style-focus="left:16px">Skip to content</a>
+<header style="{{ navStyle }}">
+  <a href="SK%20Energy%20Homepage.dc.html" aria-label="SK Energy home" style="display:flex;align-items:center;flex-shrink:0">
+    <img src="assets/sk-logo-light.svg" alt="SK Energy" style="height:34px;width:auto;display:block">
+  </a>
+  <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+    <nav aria-label="Primary" style="display:flex;align-items:center;gap:10px">
+      <div style="position:relative" onMouseLeave="{{ closeSvc }}">
+        <button type="button" aria-haspopup="true" aria-expanded="{{ svcOpen }}" aria-controls="svc-menu" onClick="{{ toggleSvc }}" onMouseEnter="{{ openSvc }}" style="{{ svcBtnStyle }}">Services <span aria-hidden="true" style="font-size:10px">▼</span></button>
+        <sc-if value="{{ svcOpen }}">
+          <div id="svc-menu" style="position:absolute;top:52px;left:0;width:min(440px,90vw);background:#fff;border-radius:24px;padding:10px;box-shadow:0 30px 60px -20px rgba(14,17,16,0.35);display:flex;flex-direction:column;gap:2px">
+            <a href="Service.dc.html?slug=solar-pv" style="display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;padding:10px;border-radius:16px" style-hover="background:#F1F1EF"><span aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#F1F1EF;display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 5px rgba(203,242,76,0.3)"></span></span><span style="display:flex;flex-direction:column;gap:2px"><b style="font-size:15px;font-weight:600">Solar PV</b><span style="font-size:13px;color:#6C7566">Generate electricity on your own roof</span></span></a>
+            <a href="Service.dc.html?slug=battery-storage" style="display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;padding:10px;border-radius:16px" style-hover="background:#F1F1EF"><span aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#F1F1EF;display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 5px rgba(203,242,76,0.3)"></span></span><span style="display:flex;flex-direction:column;gap:2px"><b style="font-size:15px;font-weight:600">Battery Storage</b><span style="font-size:13px;color:#6C7566">Store surplus energy for later</span></span></a>
+            <a href="Service.dc.html?slug=heat-pumps" style="display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;padding:10px;border-radius:16px" style-hover="background:#F1F1EF"><span aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#F1F1EF;display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 5px rgba(203,242,76,0.3)"></span></span><span style="display:flex;flex-direction:column;gap:2px"><b style="font-size:15px;font-weight:600">Heat Pumps</b><span style="font-size:13px;color:#6C7566">Low-carbon heating, designed to fit</span></span></a>
+            <a href="Service.dc.html?slug=ev-chargers" style="display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;padding:10px;border-radius:16px" style-hover="background:#F1F1EF"><span aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#F1F1EF;display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 5px rgba(203,242,76,0.3)"></span></span><span style="display:flex;flex-direction:column;gap:2px"><b style="font-size:15px;font-weight:600">EV Chargers</b><span style="font-size:13px;color:#6C7566">Home, workplace and fleet charging</span></span></a>
+            <a href="Service.dc.html?slug=underfloor-heating" style="display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;padding:10px;border-radius:16px" style-hover="background:#F1F1EF"><span aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#F1F1EF;display:flex;align-items:center;justify-content:center"><span style="width:14px;height:14px;border-radius:50%;background:#cbf24c;box-shadow:0 0 0 5px rgba(203,242,76,0.3)"></span></span><span style="display:flex;flex-direction:column;gap:2px"><b style="font-size:15px;font-weight:600">Underfloor Heating</b><span style="font-size:13px;color:#6C7566">Even warmth from the floor up</span></span></a>
+          </div>
+        </sc-if>
+      </div>
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+        <a href="{{ n.href }}" aria-current="{{ n.current }}" style="{{ n.style }}" style-hover="background:rgba(255,251,251,0.3);color:#fff">{{ n.label }}</a>
+      </sc-for>
+    </nav>
+    <a href="Contact.dc.html" style="height:44px;padding:0 22px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:15px;font-weight:600;display:flex;align-items:center;gap:10px;flex-shrink:0" style-hover="color:#0E1110;background:#d8f86f">Get a free consultation <span aria-hidden="true">→</span></a>
+  </sc-if>
+  <sc-if value="{{ narrow }}">
+    <button type="button" aria-expanded="{{ mobOpen }}" aria-controls="mob-menu" aria-label="Open menu" onClick="{{ toggleMob }}" style="height:44px;padding:0 18px;border-radius:999px;border:0;background:#cbf24c;color:#0E1110;font-size:15px;font-weight:600;cursor:pointer">Menu</button>
+  </sc-if>
+</header>
+<sc-if value="{{ mobOpen }}">
+  <div id="mob-menu" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed;inset:0;z-index:120;background:#0E1110;color:#fff;padding:24px;display:flex;flex-direction:column;gap:28px;overflow:auto">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <img src="assets/sk-logo-light.svg" alt="SK Energy" style="height:30px">
+      <button type="button" onClick="{{ toggleMob }}" aria-label="Close menu" style="height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,0.3);background:transparent;color:#fff;font-size:15px;cursor:pointer">Close</button>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <span style="font-size:13px;color:#cbf24c;letter-spacing:0.08em;text-transform:uppercase">Services</span>
+      <a href="Service.dc.html?slug=solar-pv" style="color:#fff;font-size:20px;padding:8px 0">Solar PV</a>
+      <a href="Service.dc.html?slug=battery-storage" style="color:#fff;font-size:20px;padding:8px 0">Battery Storage</a>
+      <a href="Service.dc.html?slug=heat-pumps" style="color:#fff;font-size:20px;padding:8px 0">Heat Pumps</a>
+      <a href="Service.dc.html?slug=ev-chargers" style="color:#fff;font-size:20px;padding:8px 0">EV Chargers</a>
+      <a href="Service.dc.html?slug=underfloor-heating" style="color:#fff;font-size:20px;padding:8px 0">Underfloor Heating</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,0.15);padding-top:20px">
+      <a href="SK%20Energy%20Homepage.dc.html#how-it-works" style="color:#fff;font-size:clamp(22px,6vw,26px);font-weight:600;padding:6px 0">How it works</a>
+      <a href="Work.dc.html" style="color:#fff;font-size:clamp(22px,6vw,26px);font-weight:600;padding:6px 0">Our work</a>
+      <a href="News.dc.html" style="color:#fff;font-size:clamp(22px,6vw,26px);font-weight:600;padding:6px 0">News</a>
+      <a href="About.dc.html" style="color:#fff;font-size:clamp(22px,6vw,26px);font-weight:600;padding:6px 0">About</a>
+      <a href="Contact.dc.html" style="color:#fff;font-size:clamp(22px,6vw,26px);font-weight:600;padding:6px 0">Contact</a>
+    </div>
+    <a href="Contact.dc.html" style="height:56px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:17px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:auto">Get a free consultation</a>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;services&quot;,&quot;process&quot;,&quot;work&quot;,&quot;news&quot;,&quot;about&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { scrolled: false, wide: true, svcOpen: false, mobOpen: false };
+  componentDidMount() {
+    this.onScroll = () => { const s = window.scrollY > 60; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+    this.onResize = () => { const w = window.innerWidth >= 1080; if (w !== this.state.wide) this.setState({ wide: w, mobOpen: false }); };
+    this.onKey = e => { if (e.key === 'Escape') this.setState({ svcOpen: false, mobOpen: false }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('keydown', this.onKey);
+    this.onResize(); this.onScroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('keydown', this.onKey);
+  }
+  renderVals() {
+    const s = this.state, active = this.props.active || '';
+    const pill = on => ({ height: 41, padding: '0 20px', borderRadius: 999, border: 0, background: on ? 'rgba(203,242,76,0.22)' : 'rgba(255,251,251,0.18)', boxShadow: on ? 'inset 0 0 0 1px rgba(203,242,76,0.6)' : 'none', backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)', color: '#fff', fontSize: 15, display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', fontFamily: 'inherit' });
+    const items = [['How it works', 'SK%20Energy%20Homepage.dc.html#how-it-works', 'process'], ['Our work', 'Work.dc.html', 'work'], ['News', 'News.dc.html', 'news'], ['About', 'About.dc.html', 'about']];
+    const ez = 'cubic-bezier(.22,1,.36,1)';
+    return {
+      navStyle: {
+        position: 'fixed', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 20, borderRadius: 999,
+        transition: `top .5s ${ez}, left .5s ${ez}, right .5s ${ez}, background .4s, padding .4s, box-shadow .4s`,
+        ...(s.scrolled
+          ? { top: 12, left: 'max(12px, calc(50% - 680px))', right: 'max(12px, calc(50% - 680px))', padding: '8px 8px 8px 22px', background: 'rgba(14,17,16,0.74)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', boxShadow: '0 20px 40px -20px rgba(0,0,0,0.5)' }
+          : { top: 'clamp(20px,3vw,44px)', left: 'clamp(20px,4.6vw,66px)', right: 'clamp(20px,4.6vw,66px)', padding: 0, background: 'transparent', boxShadow: 'none' })
+      },
+      wide: s.wide, narrow: !s.wide, svcOpen: s.svcOpen, mobOpen: s.mobOpen,
+      svcBtnStyle: pill(active === 'services'),
+      navItems: items.map(([label, href, key]) => ({ label, href, current: active === key ? 'page' : 'false', style: pill(active === key) })),
+      toggleSvc: () => this.setState({ svcOpen: !s.svcOpen }),
+      openSvc: () => this.setState({ svcOpen: true }),
+      closeSvc: () => this.setState({ svcOpen: false }),
+      toggleMob: () => this.setState({ mobOpen: !s.mobOpen })
+    };
+  }
+}
+</script>
+</body>
+</html>

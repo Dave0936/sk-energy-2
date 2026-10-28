@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<sc-if value="{{ showCta }}" hint-placeholder-val="{{ true }}">
+  <section data-screen-label="Footer CTA" style="padding:clamp(24px,3vw,40px) clamp(12px,4.2vw,61px) 0;max-width:1440px;margin:0 auto">
+    <div style="position:relative;border-radius:clamp(28px,3vw,40px);overflow:hidden;background:#0E1110;color:#fff;display:flex;flex-wrap:wrap;min-height:420px">
+      <div data-reveal="" style="flex:1 1 480px;padding:clamp(32px,5vw,72px);display:flex;flex-direction:column;gap:22px;justify-content:center;position:relative;z-index:1">
+        <span style="align-self:flex-start;padding:5px 14px;border-radius:999px;border:1px solid #cbf24c;color:#cbf24c;font-size:14px;font-weight:500">Free consultation</span>
+        <h2 style="margin:0;font-size:clamp(34px,3.8vw,54px);font-weight:600;line-height:1.15;letter-spacing:-0.02em;text-wrap:balance;max-width:620px">Get a straight answer on what your property needs.</h2>
+        <p style="margin:0;font-size:clamp(16px,1.3vw,18px);line-height:1.55;color:rgba(255,255,255,0.75);max-width:520px">Send us your postcode and we'll come back with the options worth surveying, or tell you if now isn't the time.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <a href="Contact.dc.html" data-magnetic="" style="height:56px;padding:0 10px 0 26px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:17px;font-weight:600;display:flex;align-items:center;gap:16px" style-hover="color:#0E1110;background:#d8f86f">Plan your energy system <span aria-hidden="true" style="width:38px;height:38px;border-radius:50%;background:#0E1110;color:#cbf24c;display:flex;align-items:center;justify-content:center">→</span></a>
+          <a href="tel:+441383257022" style="height:56px;padding:0 24px;border-radius:999px;border:1px solid rgba(255,255,255,0.28);color:#fff;font-size:16px;display:flex;align-items:center" style-hover="color:#fff;background:rgba(255,255,255,0.08)">Call 01383 257022</a>
+        </div>
+      </div>
+      <div style="flex:1 1 380px;position:relative;min-height:300px">
+        <img data-parallax="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20261027_202204_512004d3-c5d5-4b43-be02-387906a7c9ad.png" alt="White farmhouse with rooftop solar at sunset over the coast" style="position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg, #0E1110 0%, rgba(14,17,16,0) 45%)"></div>
+      </div>
+    </div>
+  </section>
+</sc-if>
+<footer data-screen-label="Footer" style="background:#fff">
+  <div style="max-width:1440px;margin:0 auto;padding:clamp(56px,6vw,80px) clamp(20px,4.6vw,66px) 32px;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between">
+      <div style="flex:1 1 280px;max-width:340px;display:flex;flex-direction:column;gap:18px">
+        <img src="assets/sk-logo-ink.svg" alt="SK Energy" style="height:36px;width:auto;align-self:flex-start">
+        <span style="font-size:15px;font-weight:600;line-height:1.4">Architecturally Led Renewable Energy Solutions</span>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#6C7566">Solar PV, battery storage, heat pumps, EV chargers and underfloor heating, designed around your property and installed by one team.</p>
+        <div style="display:flex;gap:14px 22px;flex-wrap:wrap;align-items:center">
+          <img src="assets/mcs-ink.png" alt="MCS certified" style="height:28px;width:auto;display:block">
+          <img src="assets/trustmark-ink.png" alt="TrustMark Government Endorsed Quality" style="height:22px;width:auto;display:block">
+          <a href="https://uk.trustpilot.com/search?query=SK%20Energy" aria-label="Read our reviews on Trustpilot" style="display:block"><img src="assets/trustpilot-ink.png" alt="Trustpilot" style="height:22px;width:auto;display:block"></a>
+        </div>
+      </div>
+      <nav aria-label="Footer" style="flex:2 1 560px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px"><b style="font-size:16px;font-weight:600;margin-bottom:4px">Services</b><a href="Service.dc.html?slug=solar-pv" style="color:#6C7566">Solar PV</a><a href="Service.dc.html?slug=battery-storage" style="color:#6C7566">Battery Storage</a><a href="Service.dc.html?slug=heat-pumps" style="color:#6C7566">Heat Pumps</a><a href="Service.dc.html?slug=ev-chargers" style="color:#6C7566">EV Chargers</a><a href="Service.dc.html?slug=underfloor-heating" style="color:#6C7566">Underfloor Heating</a></div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px"><b style="font-size:16px;font-weight:600;margin-bottom:4px">Company</b><a href="About.dc.html" style="color:#6C7566">About us</a><a href="SK%20Energy%20Homepage.dc.html#how-it-works" style="color:#6C7566">How it works</a><a href="Work.dc.html" style="color:#6C7566">Our work</a><a href="News.dc.html" style="color:#6C7566">News</a><a href="Contact.dc.html" style="color:#6C7566">Contact</a><a href="Warranty.dc.html" style="color:#6C7566">Warranty registration</a></div>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px"><b style="font-size:16px;font-weight:600;margin-bottom:4px">Contact</b><a href="mailto:customerservice@sk-energy.co.uk" style="color:#6C7566;word-break:break-word">customerservice@sk-energy.co.uk</a><a href="tel:+441383257022" style="color:#6C7566">01383 257022</a><address style="font-style:normal;line-height:1.6;color:#6C7566"><b style="font-weight:600;color:#0E1110">Fife Office</b><br>Suite 2, Abtel Building<br>Pitreavie Business Park<br>Pitreavie Drive<br>Dunfermline, KY11 8US</address><address style="font-style:normal;line-height:1.6;color:#6C7566"><b style="font-weight:600;color:#0E1110">York Office</b><br>Tower Court Business Centre<br>Oakdale Road<br>Clifton Moor<br>York, YO30 4XL</address></div>
+      </nav>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;border-top:1px solid #E8E8E5;padding-top:24px;font-size:13px;color:#6C7566">
+      <div style="display:flex;gap:24px;flex-wrap:wrap"><a href="https://sk-energy.co.uk/privacy-policy/" style="color:#6C7566">Privacy policy</a><a href="https://sk-energy.co.uk/privacy-policy/#privacy-choices" style="color:#6C7566">Privacy choices</a><a href="/terms/" style="color:#6C7566">Terms &amp; conditions</a></div>
+      <span>© 2026 SK Energy. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;cta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const c = this.props.cta;
+    return { showCta: !(c === false || c === 'false') };
+  }
+}
+</script>
+</body>
+</html>

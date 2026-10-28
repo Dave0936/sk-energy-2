@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>SK Energy — Article</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#0E1110;font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0E1110;text-decoration:none}
+a:hover{color:#4d5c12}
+:focus-visible{outline:2px solid #cbf24c;outline-offset:3px;border-radius:8px}
+button{font-family:inherit}
+::selection{background:#cbf24c;color:#0E1110}
+</style>
+</helmet>
+<dc-import name="SiteHeader" active="news" hint-size="100%,1px"></dc-import>
+<div aria-hidden="true" style="position:fixed;left:0;top:0;height:4px;width:100%;z-index:110;pointer-events:none"><div style="{{ progressStyle }}"></div></div>
+<main id="main">
+  <dc-import name="PageHero" title="{{ a.title }}" intro="{{ a.excerpt }}" eyebrow="{{ a.cat }}" meta="{{ a.metaLine }}" crumb="{{ a.cat }}" parent-label="News" parent-href="News.dc.html" img="{{ a.img }}" alt="{{ a.alt }}" chips="{{ catChips }}" active-chip="{{ a.cat }}" hint-size="100%,780px"></dc-import>
+
+  <section data-screen-label="Article body" style="padding:clamp(64px,8vw,110px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,80px);align-items:flex-start;justify-content:center">
+    <article style="flex:1 1 560px;max-width:740px;display:flex;flex-direction:column;gap:24px">
+      <sc-for list="{{ blocks }}" as="b" hint-placeholder-count="5">
+        <sc-if value="{{ b.isP }}"><p style="margin:0;font-size:clamp(17px,1.4vw,19px);line-height:1.7;color:#2E332F;text-wrap:pretty">{{ b.text }}</p></sc-if>
+        <sc-if value="{{ b.isH }}"><h2 style="margin:20px 0 0;font-size:clamp(26px,2.4vw,32px);font-weight:600;letter-spacing:-0.02em;line-height:1.2">{{ b.text }}</h2></sc-if>
+        <sc-if value="{{ b.isQ }}"><blockquote style="margin:16px 0;padding:28px 32px;border-radius:28px;background:#cbf24c;font-size:clamp(22px,2vw,28px);font-weight:600;line-height:1.3;letter-spacing:-0.01em">{{ b.text }}</blockquote></sc-if>
+        <sc-if value="{{ b.isL }}">
+          <ul style="list-style:none;margin:0;padding:24px;border-radius:28px;background:#F1F1EF;display:flex;flex-direction:column;gap:12px">
+            <sc-for list="{{ b.items }}" as="li"><li style="display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.5"><span style="width:20px;height:20px;border-radius:50%;background:#cbf24c;flex-shrink:0;margin-top:2px"></span>{{ li }}</li></sc-for>
+          </ul>
+        </sc-if>
+      </sc-for>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-top:1px solid #E8E8E5;padding-top:24px;margin-top:16px">
+        <a href="News.dc.html" style="font-size:15px;font-weight:600" style-hover="color:#4d5c12">← All articles</a>
+        <button type="button" onClick="{{ copyLink }}" style="height:44px;padding:0 20px;border-radius:999px;border:1px solid #D3D5D0;background:#fff;color:#0E1110;font-size:15px;cursor:pointer" style-hover="border-color:#0E1110">{{ copyLabel }}</button>
+      </div>
+    </article>
+    <aside style="flex:0 1 320px;position:sticky;top:110px;display:flex;flex-direction:column;gap:16px">
+      <div style="padding:clamp(20px,2.2vw,26px);border-radius:28px;background:#F1F1EF;display:flex;flex-direction:column;gap:12px">
+        <img src="assets/sk-logo-ink.svg" alt="SK Energy" style="height:28px;width:auto;align-self:flex-start">
+        <span style="font-size:15px;line-height:1.5;color:#4A5248">Written by the SK Energy team in Dunfermline.</span>
+        <span style="font-size:14px;color:#6C7566">{{ a.metaLine }}</span>
+      </div>
+      <div style="padding:clamp(20px,2.2vw,26px);border-radius:28px;background:#0E1110;color:#fff;display:flex;flex-direction:column;gap:14px">
+        <b style="font-size:20px;font-weight:600;line-height:1.3">Want advice for your property?</b>
+        <span style="font-size:15px;line-height:1.5;color:rgba(255,255,255,0.75)">Book a free consultation and we'll tell you what's worth surveying.</span>
+        <a href="Contact.dc.html" style="height:48px;padding:0 22px;border-radius:999px;background:#cbf24c;color:#0E1110;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center" style-hover="color:#0E1110;background:#d8f86f">Get in touch</a>
+      </div>
+    </aside>
+  </section>
+
+  <section data-screen-label="Related" style="background:#F1F1EF;box-shadow:0 0 0 100vmax #F1F1EF;clip-path:inset(0 -100vmax);padding:clamp(56px,7vw,96px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:flex-end">
+      <h2 data-reveal="" style="margin:0;font-size:clamp(30px,3vw,44px);font-weight:600;letter-spacing:-0.02em">Keep reading</h2>
+      <a href="News.dc.html" style="height:48px;padding:0 26px;border-radius:26px;background:#0E1110;color:#fff;font-size:16px;display:flex;align-items:center" style-hover="color:#fff;background:#262B27">All articles</a>
+    </div>
+    <div data-stagger="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+      <sc-for list="{{ related }}" as="r" hint-placeholder-count="0">
+        <a href="{{ r.href }}" data-hover-zoom="" style="display:flex;flex-direction:column;border-radius:32px;overflow:hidden;background:#fff;color:#0E1110" style-hover="color:#0E1110">
+          <div style="height:200px;overflow:hidden;background:#E8E8E5"><img data-zoom="" src="{{ r.img }}" alt="{{ r.alt }}" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+          <div style="padding:22px;display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:8px;align-items:center;font-size:13px;color:#6C7566"><span style="padding:4px 12px;border-radius:999px;background:#cbf24c;color:#0E1110;font-weight:500">{{ r.cat }}</span>{{ r.mins }} min read</div>
+            <h3 style="margin:0;font-size:clamp(17px,1.4vw,19px);font-weight:700;line-height:1.3">{{ r.title }}</h3>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,900px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;slug&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;heat-pump-running-costs-scottish-winter&quot;,&quot;home-energy-scotland-grant-loan&quot;,&quot;ev-charging-off-peak-tariff&quot;,&quot;battery-sizing-guide&quot;,&quot;new-build-heat-standard-specification&quot;,&quot;two-engineers-join-team&quot;],&quot;default&quot;:&quot;heat-pump-running-costs-scottish-winter&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { d: null, progress: 0, copied: false };
+  componentDidMount() {
+    import(new URL('site-data.js', location.href).href).then(d => this.setState({ d }, () => { const a = this.current(); if (a) document.title = 'SK Energy — ' + a.title; }));
+    import(new URL('site-motion.js', location.href).href).then(m => m.init());
+    this.onScroll = () => { const h = document.documentElement; const p = Math.min(1, h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)); if (Math.abs(p - this.state.progress) > 0.005) this.setState({ progress: p }); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this.onScroll); }
+  current() {
+    const d = this.state.d; if (!d) return null;
+    const slug = new URLSearchParams(location.search).get('slug') || this.props.slug;
+    return d.ARTICLES.find(x => x.slug === slug) || d.ARTICLES[0];
+  }
+  renderVals() {
+    const d = this.state.d, a = this.current();
+    const progressStyle = { height: '100%', width: (this.state.progress * 100) + '%', background: '#cbf24c' };
+    if (!a) return { a: {}, blocks: [], related: [], catChips: [], progressStyle, copyLabel: 'Copy link', copyLink: () => {} };
+    const others = d.ARTICLES.filter(x => x.slug !== a.slug);
+    const related = [...others.filter(x => x.cat === a.cat), ...others.filter(x => x.cat !== a.cat)].slice(0, 3);
+    return {
+      a: { ...a, metaLine: a.date + ' · ' + a.mins + ' min read' },
+      catChips: d.CATEGORIES.filter(c => c !== 'All').map(c => ({ label: c, href: 'News.dc.html', key: c })),
+      blocks: a.body.map(([t, v]) => ({ isP: t === 'p', isH: t === 'h', isQ: t === 'q', isL: t === 'l', text: typeof v === 'string' ? v : '', items: Array.isArray(v) ? v : [] })),
+      related: related.map(r => ({ ...r, href: d.LINKS.article(r.slug) })),
+      progressStyle,
+      copyLabel: this.state.copied ? 'Link copied' : 'Copy link',
+      copyLink: () => { try { navigator.clipboard.writeText(location.href); } catch (e) {} this.setState({ copied: true }); setTimeout(() => this.setState({ copied: false }), 2000); }
+    };
+  }
+}
+</script>
+</body>
+</html>

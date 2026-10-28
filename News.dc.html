@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>SK Energy — News &amp; insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:#0E1110;font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0E1110;text-decoration:none}
+a:hover{color:#4d5c12}
+:focus-visible{outline:2px solid #cbf24c;outline-offset:3px;border-radius:8px}
+button{font-family:inherit}
+::selection{background:#cbf24c;color:#0E1110}
+</style>
+</helmet>
+<dc-import name="SiteHeader" active="news" hint-size="100%,1px"></dc-import>
+<main id="main">
+  <dc-import name="PageHero" title="News &amp; insights" intro="Plain-English guides on renewable technology, funding and running costs, plus updates from the SK Energy team." eyebrow="#News" crumb="News" img="https://d8j0ntlcm91z4.cloudfront.net/user_3GEBhpJDThOL4J5Wt3PW565Nnud/hf_20260911_171154_9e45e12f-ac7d-4f97-abc0-213323c40517.png" alt="System design drawings on a desk" chips="{{ heroChips }}" active-chip="none" size="short" hint-size="100%,620px"></dc-import>
+  <section data-screen-label="Articles" style="padding:clamp(64px,8vw,110px) clamp(20px,4.6vw,66px);max-width:1440px;margin:0 auto">
+    <dc-import name="NewsGrid" hint-size="100%,1200px"></dc-import>
+  </section>
+</main>
+<dc-import name="SiteFooter" hint-size="100%,900px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    import(new URL('site-motion.js', location.href).href).then(m => m.init());
+  }
+  renderVals() {
+    return {
+      heroChips: [['Guides', 'Guides'], ['Funding', 'Funding'], ['EV', 'EV'], ['New build', 'New build'], ['Company news', 'Company news']].map(([label]) => ({ label, href: '#main', key: label }))
+    };
+  }
+}
+</script>
+</body>
+</html>
